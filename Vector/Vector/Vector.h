@@ -2,14 +2,6 @@
 //  Vector.h
 //  Vector
 //
-//  Created by Adam Saher on 16/01/2019.
-//  Copyright © 2019 Adam Saher. All rights reserved.
-//
-
-//
-//  Vector.h
-//  Vector
-//
 //  Created by Adam Saher on 19/12/2018.
 //  Copyright © 2018 Adam Saher. All rights reserved.
 //
