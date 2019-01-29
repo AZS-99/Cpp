@@ -42,7 +42,7 @@
 		663CD973211F69D800C2FBEE = {
 			isa = PBXGroup;
 			children = (
-				663CD97E211F69D800C2FBEE /* LinkedListGeneric */,
+				663CD97E211F69D800C2FBEE /* LinkedList */,
 				663CD97D211F69D800C2FBEE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,13 +55,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		663CD97E211F69D800C2FBEE /* LinkedListGeneric */ = {
+		663CD97E211F69D800C2FBEE /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
 				663CD97F211F69D800C2FBEE /* main.cpp */,
 				663CD987211F69EC00C2FBEE /* LinkedList.hpp */,
 			);
-			path = LinkedListGeneric;
+			path = LinkedList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 663CD977211F69D800C2FBEE /* Build configuration list for PBXProject "LinkedListGeneric" */;
+			buildConfigurationList = 663CD977211F69D800C2FBEE /* Build configuration list for PBXProject "LinkedList" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -255,7 +255,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		663CD977211F69D800C2FBEE /* Build configuration list for PBXProject "LinkedListGeneric" */ = {
+		663CD977211F69D800C2FBEE /* Build configuration list for PBXProject "LinkedList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				663CD981211F69D800C2FBEE /* Debug */,
