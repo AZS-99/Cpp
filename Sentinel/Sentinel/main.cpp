@@ -9,6 +9,12 @@
 #include <iostream>
 #include "Sentinel.h"
 int main(int argc, const char * argv[]) {
-    Sentinel<int> s; 
-    return 0;
+    Sentinel<int> s;
+    try {
+        s.pop_front();
+    }
+    catch (std::string& error) {
+        std::cout << error << std::endl;
+    }
+    
 }

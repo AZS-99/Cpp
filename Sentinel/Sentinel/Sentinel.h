@@ -8,6 +8,8 @@
 
 #ifndef Sentinel_h
 #define Sentinel_h
+#include <string>
+
 template <typename T>
 class Sentinel {
     struct Node {
@@ -26,6 +28,7 @@ class Sentinel {
 public:
     Sentinel();
     void push_front(T data);
+    void pop_front();
 };
 
 
@@ -43,6 +46,18 @@ void Sentinel<T>::push_front(T data) {
     head_->nxt = node;
     node->nxt_->prev_ = node;
     size_++;
+}
+
+
+template <typename T>
+void Sentinel<T>::pop_front() {
+    if (size_ == 0)
+        throw std::string("Deleting from empty list!");
+    Node* rm = head_->nxt_;
+    head_->nxt_ = rm->nxt_;
+    rm->nxt_->prev_ = head_;
+    delete rm;
+    
 }
 
 #endif /* Sentinel_h */
