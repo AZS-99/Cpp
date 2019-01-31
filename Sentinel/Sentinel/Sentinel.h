@@ -24,7 +24,7 @@ class Sentinel {
     };
     Node* head_;
     Node* tail_;
-    size_t size_ = 0;
+    size_t size_;
 public:
     Sentinel();
     void push_front(T data);
@@ -38,6 +38,7 @@ Sentinel<T>::Sentinel() {
     tail_ = new Node();
     head_->nxt_ = tail_;
     tail_->prev_ = head_;
+    size_ = 0;
 }
 
 template <typename T>
@@ -57,7 +58,7 @@ void Sentinel<T>::pop_front() {
     head_->nxt_ = rm->nxt_;
     rm->nxt_->prev_ = head_;
     delete rm;
-    
+    size_--;
 }
 
 #endif /* Sentinel_h */

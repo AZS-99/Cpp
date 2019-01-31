@@ -18,6 +18,7 @@ class LinkedList{
     
     Node* head_;
     Node* tail_;
+    size_t size_;
 public:
     LinkedList();
     ~LinkedList();
@@ -27,6 +28,29 @@ public:
     void push_back(const T&);
     void pop_back(const T&);
     std::ostream& print(std::ostream& os) const;
+    
+    class const_iterator {
+        friend class LinkedList;
+        Node* current_;
+    protected:
+        const_iterator(Node* current) {
+            
+        }
+    public:
+        const_iterator();
+        const_iterator operator++();
+        const_iterator operator++(int);
+        const T& operator*();
+    };
+    
+    class iterator : public const_iterator {
+        
+    };
+    
+    const_iterator cbegin() const {
+        return const_iterator(head_);
+    }
+    const_iterator cend() const;
 };
 
 
@@ -34,6 +58,7 @@ template <typename T>
 LinkedList<T>::LinkedList(){
     head_ = nullptr;
     tail_ = nullptr;
+    size_ = 0;
 }
 
 
