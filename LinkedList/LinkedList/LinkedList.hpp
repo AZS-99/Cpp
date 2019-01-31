@@ -20,13 +20,13 @@ class LinkedList{
     Node* tail_;
 public:
     LinkedList();
+    ~LinkedList();
     void operator+=(T value);
     void push_front(const T&);
     void pop_front();
     void push_back(const T&);
     void pop_back(const T&);
-    void print() const;
-    std::ostream& display(std::ostream& os) const;
+    std::ostream& print(std::ostream& os) const;
 };
 
 
@@ -34,6 +34,12 @@ template <typename T>
 LinkedList<T>::LinkedList(){
     head_ = nullptr;
     tail_ = nullptr;
+}
+
+
+template <typename T>
+LinkedList<T>::~LinkedList<T>() {
+    
 }
 
 
@@ -54,7 +60,6 @@ void LinkedList<T>::push_front(const T& data) {
     Node* node = new Node(data, head_);
     if (head_) {
         head_->prev_ = node;
-        
     }
     else
         tail_ = node;
@@ -100,18 +105,7 @@ void LinkedList<T>::pop_back(const T& data) {
 
 
 template <typename T>
-void LinkedList<T>::print() const{
-    Node* current = head_;
-    while(current){
-        std::cout << current->value_ << " --> ";
-        current = current->nxt;
-    }
-    std::cout << "|" << std::endl;
-}
-
-
-template <typename T>
-std::ostream& LinkedList<T>::display(std::ostream& os) const{
+std::ostream& LinkedList<T>::print(std::ostream& os) const{
     Node* current = head_;
     while(current){
         os << current->data_ << " --> ";
@@ -124,7 +118,7 @@ std::ostream& LinkedList<T>::display(std::ostream& os) const{
 
 template <typename T>
 std::ostream& operator<<(std::ostream& os, LinkedList<T>& linked){
-    linked.display(os);
+    linked.print(os);
     return os;
 }
 
