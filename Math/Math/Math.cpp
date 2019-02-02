@@ -10,6 +10,12 @@
 
 namespace math {
     
+    long long approximate(const double& num) {
+        if (num - 0.5 >= (long long) num)
+            return (long long) num + 1;
+        return (long long) num;
+    }
+    
     size_t* split(size_t num) {
         unsigned size = number_of_digits(num);
         size_t* array = new size_t[size];

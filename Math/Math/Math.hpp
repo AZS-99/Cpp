@@ -13,8 +13,8 @@
 #include <type_traits>
 
 namespace math {
-    
-    size_t* split(size_t num);
+    long long approximate(const double&);
+    size_t* split(size_t);
     size_t sum(const size_t&);
     size_t sum(const size_t&, const size_t&);
     unsigned int number_of_digits(const size_t&);
