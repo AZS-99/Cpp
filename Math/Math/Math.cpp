@@ -25,14 +25,15 @@ unsigned int number_of_digits(const size_t& num) {
 }
 
 
-//size_t* split(const size_t& num) {
-//    unsigned size = number_of_digits(num);
-//    size_t* array = new size_t[size];
-//    for (auto i = 0u; i < size; ++i) {
-//        array[i] = (num /pow(10, size - i - 1));
-//    }
-//    return array;
-//}
+size_t* split(size_t num) {
+    unsigned size = number_of_digits(num);
+    size_t* array = new size_t[size];
+    for (int i = size - 1; i >= 0; --i) {
+        array[i] = num % 10;
+        num /= 10;
+    }
+    return array;
+}
 
 
 size_t sum(const size_t& a) {

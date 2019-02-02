@@ -16,9 +16,9 @@ int main(int argc, const char * argv[]) {
     std::cout << sum(array, 3) << std::endl;
     std::cout << number_of_digits(505) << std::endl;
     
-    
-    
-    
-    std::cout << first_digit(878445) << std::endl;
+    auto array1 = split(654943);
+    for (auto i = 0u; i < 6; ++i)
+        std::cout << array1[i] << ' ';
+    std::cout << std::endl;
     return 0;
 }

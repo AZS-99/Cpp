@@ -12,7 +12,7 @@
 #include <iostream>
 #include <type_traits>
 
-size_t* split(const size_t& num);
+size_t* split(size_t num);
 size_t sum(const size_t&);
 size_t sum(const size_t&, const size_t&);
 unsigned int first_digit(unsigned int num);
