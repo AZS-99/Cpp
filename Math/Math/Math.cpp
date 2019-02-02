@@ -10,11 +10,6 @@
 
 
 namespace math {
-    unsigned int number_of_digits(const size_t& num) {
-        if (num < 9)
-            return 1;
-        return number_of_digits(num / 10) + 1;
-    }
     
     
     size_t* split(size_t num) {
@@ -42,5 +37,11 @@ namespace math {
             total += i;
         return total;
     }
-
+    
+    
+    unsigned int number_of_digits(const size_t& num) {
+        if (num < 9)
+            return 1;
+        return number_of_digits(num / 10) + 1;
+    }
 }

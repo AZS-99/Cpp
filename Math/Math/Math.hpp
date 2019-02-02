@@ -15,8 +15,16 @@ namespace math {
     size_t* split(size_t num);
     size_t sum(const size_t&);
     size_t sum(const size_t&, const size_t&);
-    unsigned int first_digit(unsigned int num);
     unsigned int number_of_digits(const size_t&);
+    
+    
+    template <typename T, typename = typename std::enable_if<std::is_arithmetic<T>::value, T>::type>
+    double pow(const T& base, const size_t& exponent) {
+        if (exponent == 0)
+            return 1;
+        return base * pow(base, exponent - 1);
+    }
+    
     
     template <typename T, typename = typename std::enable_if<std::is_arithmetic<T>::value, T>::type>
     T sum(const T* array, unsigned int size) {

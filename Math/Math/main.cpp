@@ -20,5 +20,7 @@ int main(int argc, const char * argv[]) {
     for (auto i = 0u; i < 6; ++i)
         std::cout << array1[i] << ' ';
     std::cout << std::endl;
+    
+    std::cout << math::pow(10, 2) << std::endl;
     return 0;
 }
