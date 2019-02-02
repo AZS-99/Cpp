@@ -11,7 +11,9 @@
 
 #include <iostream>
 #include <type_traits>
+
 namespace math {
+    
     size_t* split(size_t num);
     size_t sum(const size_t&);
     size_t sum(const size_t&, const size_t&);

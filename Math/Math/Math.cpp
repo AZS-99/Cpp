@@ -8,9 +8,7 @@
 #include <cmath>
 #include "Math.hpp"
 
-
 namespace math {
-    
     
     size_t* split(size_t num) {
         unsigned size = number_of_digits(num);
