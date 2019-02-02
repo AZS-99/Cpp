@@ -5,16 +5,27 @@
 //  Created by Adam Saher on 01/02/2019.
 //  Copyright © 2019 Adam Saher. All rights reserved.
 //
-#include <cmath>
+
 #include "Math.hpp"
 
 namespace math {
     
-    long long approximate(const double& num) {
-        if (num - 0.5 >= (long long) num)
-            return (long long) num + 1;
-        return (long long) num;
+    double approximate(const double& num, unsigned precision) {
+        return approximate(num * pow(10, precision))/pow(10, precision);
     }
+    
+    
+    double approximate(const double& num) {
+        if (num - 0.5 >= floor(num))
+            return floor(num) + 1;
+        return floor(num);
+    }
+    
+    
+    double floor(const double& num) {
+        return (unsigned long long) num;
+    }
+    
     
     size_t* split(size_t num) {
         unsigned size = number_of_digits(num);

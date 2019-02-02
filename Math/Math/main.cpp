@@ -23,5 +23,8 @@ int main(int argc, const char * argv[]) {
     
     std::cout << math::pow(10, 2) << std::endl;
     std::cout << math::approximate(10.5) << std::endl;
+    std::cout << math::approximate(20.4561, 3) << std::endl;
+    std::cout << math::floor(12.4) << std::endl;
+    
     return 0;
 }

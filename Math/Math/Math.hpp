@@ -13,7 +13,9 @@
 #include <type_traits>
 
 namespace math {
-    long long approximate(const double&);
+    double approximate(const double& num);
+    double approximate(const double& num, unsigned precision);
+    double floor(const double& num);
     size_t* split(size_t);
     size_t sum(const size_t&);
     size_t sum(const size_t&, const size_t&);
@@ -25,6 +27,12 @@ namespace math {
         if (exponent == 0)
             return 1;
         return base * pow(base, exponent - 1);
+    }
+    
+    
+    template <typename T, typename = typename std::enable_if<std::is_arithmetic<T>::value, T>::type>
+    T max(const T& a, const T& b) {
+        return a > b? a : b;
     }
     
     
