@@ -10,13 +10,13 @@
 #include "Math.hpp"
 
 int main(int argc, const char * argv[]) {
-    std::cout << sum(10) << std::endl;
-    std::cout << sum(90, 100) << std::endl;
+    std::cout << math::sum(10) << std::endl;
+    std::cout << math::sum(90, 100) << std::endl;
     size_t array[] = {1, 2, 3};
-    std::cout << sum(array, 3) << std::endl;
-    std::cout << number_of_digits(505) << std::endl;
+    std::cout << math::sum(array, 3) << std::endl;
+    std::cout << math::number_of_digits(505) << std::endl;
     
-    auto array1 = split(654943);
+    auto array1 = math::split(654943);
     for (auto i = 0u; i < 6; ++i)
         std::cout << array1[i] << ' ';
     std::cout << std::endl;
