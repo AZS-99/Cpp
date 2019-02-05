@@ -16,5 +16,8 @@ int main(int argc, const char * argv[]) {
     LL += 10;
     LL += 11;
     LL += 12;
+    
+    for (auto it = LL.cbegin(); it != LL.cend(); it++)
+        std::cout << *it << std::endl;
     std::cout << LL;
 }

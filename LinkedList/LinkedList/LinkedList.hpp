@@ -20,29 +20,12 @@ namespace Container {
         void push_back(const T&);
         void pop_back(const T&);
         std::ostream& print(std::ostream& os) const;
-        
-        class const_iterator {
-            friend class LinkedList;
-            Node<T>* current_;
-        protected:
-            const_iterator(Node<T>* current) {
-                
-            }
-        public:
-            const_iterator();
-            const_iterator operator++();
-            const_iterator operator++(int);
-            const T& operator*();
-        };
-        
-        class iterator : public const_iterator {
-            
-        };
-        
-        const_iterator cbegin() const {
-            return const_iterator(head_);
+        Const_iterator<T> cbegin() const {
+            return Const_iterator<T>(head_);
         }
-        const_iterator cend() const;
+        Const_iterator<T> cend() const {
+            return Const_iterator<T>(nullptr);
+        }
     };
     
     
