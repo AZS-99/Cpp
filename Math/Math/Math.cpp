@@ -29,7 +29,7 @@ namespace math {
     
     double sqrt(const double& x) {
         if (x <= 1)
-            return 1;
+            return x;
         return sqrt(x/1.001) * 1.0005;
     }
     
