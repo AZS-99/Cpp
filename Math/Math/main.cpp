@@ -25,6 +25,7 @@ int main(int argc, const char * argv[]) {
     std::cout << math::approximate(10.5) << std::endl;
     std::cout << math::approximate(20.4561, 3) << std::endl;
     std::cout << math::floor(12.4) << std::endl;
+    std::cout << "sqrt = " << math::sqrt(100000000) << std::endl;
     
     return 0;
 }

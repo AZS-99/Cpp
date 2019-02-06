@@ -16,6 +16,7 @@ namespace math {
     double approximate(const double& num);
     double approximate(const double& num, unsigned precision);
     double floor(const double& num);
+    double sqrt(const double& x);
     size_t* split(size_t);
     size_t sum(const size_t&);
     size_t sum(const size_t&, const size_t&);

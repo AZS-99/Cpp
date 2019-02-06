@@ -10,20 +10,22 @@
 #define Const_iterator_h
 
 namespace Container {
-    template <typename T>
-    class LinkedList;
+    template <typename T> class LinkedList;
     
     template <typename T>
     class Const_iterator {
         Node<T>* current_;
         friend LinkedList<T>;
+        
     protected:
         Const_iterator(Node<T>* current);
+        
     public:
         Const_iterator();
         T operator*();
         Const_iterator operator++();     // ++x
         Const_iterator operator++(int);  // x++
+        Const_iterator operator--(int );
         bool operator==(Const_iterator other) {
             return (current_ == other.current_);
         }
@@ -62,6 +64,12 @@ namespace Container {
         
         current_ = current_->nxt;
         return *this;
+    }
+    
+    template <typename T>
+    Const_iterator<T> Const_iterator<T>::operator--(int) {
+        //Remember that x-- returns the old value
+        Const_iterator old = *this;
     }
     
     

@@ -27,6 +27,13 @@ namespace math {
     }
     
     
+    double sqrt(const double& x) {
+        if (x <= 1)
+            return 1;
+        return sqrt(x/1.001) * 1.0005;
+    }
+    
+    
     size_t* split(size_t num) {
         unsigned size = number_of_digits(num);
         size_t* array = new size_t[size];
