@@ -26,6 +26,7 @@
 		663CD97C211F69D800C2FBEE /* LinkedListGeneric */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LinkedListGeneric; sourceTree = BUILT_PRODUCTS_DIR; };
 		663CD97F211F69D800C2FBEE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		663CD987211F69EC00C2FBEE /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		B71CEA63220C9D8D00749DEC /* Iterator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Iterator.hpp; sourceTree = "<group>"; };
 		B781E5FD2204A5A900F81EC1 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		B781E5FE2204C64400F81EC1 /* Const_iterator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Const_iterator.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +64,7 @@
 				663CD97F211F69D800C2FBEE /* main.cpp */,
 				B781E5FD2204A5A900F81EC1 /* Node.hpp */,
 				B781E5FE2204C64400F81EC1 /* Const_iterator.hpp */,
+				B71CEA63220C9D8D00749DEC /* Iterator.hpp */,
 				663CD987211F69EC00C2FBEE /* LinkedList.hpp */,
 			);
 			path = LinkedList;

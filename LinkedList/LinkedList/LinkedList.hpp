@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Node.hpp"
 #include "Const_iterator.hpp"
+#include "Iterator.hpp"
 
 namespace Container {
     template <typename T>
@@ -23,8 +24,18 @@ namespace Container {
         Const_iterator<T> cbegin() const {
             return Const_iterator<T>(head_);
         }
-        Const_iterator<T> cend() const {
+        
+        Const_iterator<T> cend() const { //handle the case of doubling back from cend
             return Const_iterator<T>(nullptr);
+        }
+        
+        //REMEMBER WITH SENTINEL RETURN HEAD_->NXT AND TAIL!
+        Iterator<T> begin() const {
+            return Iterator<T>(head_);
+        }
+        
+        Iterator<T> end() const {
+            return Iterator<T>(nullptr);
         }
     };
     
