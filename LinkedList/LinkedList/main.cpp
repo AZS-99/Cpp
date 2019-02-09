@@ -17,7 +17,13 @@ int main(int argc, const char * argv[]) {
     LL += 11;
     LL += 12;
     
-    for (auto it = LL.cbegin(); it != LL.cend(); it++)
+    
+    
+    for (auto it = LL.cbegin(); it != LL.cend(); ++it)
         std::cout << *it << std::endl;
     std::cout << LL;
+
+    for (auto it = LL.cend() - 1; it != LL.cbegin(); --it) {
+        std::cout << "value: " << *it << std::endl;
+    }
 }
