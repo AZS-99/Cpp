@@ -4,13 +4,17 @@
 #include <iostream>
 #include "Node.hpp"
 #include "Const_iterator.hpp"
+#include "Iterator.hpp"
 
 namespace Container {
+    template <typename T> class Const_iterator;
+    
     template <typename T>
     class LinkedList{
         Node<T>* head_;
         Node<T>* tail_;
         size_t size_;
+        friend Const_iterator<T>;
     public:
         LinkedList();
         ~LinkedList();
@@ -19,12 +23,18 @@ namespace Container {
         void pop_front();
         void push_back(const T&);
         void pop_back(const T&);
+        void reverseprint() const;
         std::ostream& print(std::ostream& os) const;
-        Const_iterator<T> cbegin() const {
-            return Const_iterator<T>(head_);
+        Container::Const_iterator<T> cbegin() const;
+        Container::Const_iterator<T> cend() const;
+        
+        //REMEMBER WITH SENTINEL RETURN HEAD_->NXT AND TAIL!
+        Iterator<T> begin() const {
+            return Iterator<T>(head_);
         }
-        Const_iterator<T> cend() const {
-            return Const_iterator<T>(nullptr);
+        
+        Iterator<T> end() const {
+            return Iterator<T>(nullptr);
         }
     };
     
@@ -50,6 +60,7 @@ namespace Container {
             head_ = tail_ = node;
         else{
             tail_->nxt_ = node;
+            node->prev_ = tail_;
             tail_ = tail_->nxt_;
         }
     }
@@ -120,6 +131,27 @@ namespace Container {
     std::ostream& operator<<(std::ostream& os, LinkedList<T>& linked){
         linked.print(os);
         return os;
+    }
+    
+    template <typename T>
+    Const_iterator<T> LinkedList<T>::cbegin() const {
+        return Const_iterator<T>(head_, this); //took me forever to figure out that this needs to be CONST LinkedList<T>* in the constructor.
+    }
+    
+    
+    template <typename T>
+    Const_iterator<T> LinkedList<T>::cend() const { //handle the case of doubling back from cend
+        return Const_iterator<T>(nullptr, this);
+    }
+    
+    
+    template <typename T>
+    void LinkedList<T>::reverseprint() const {
+        Node<T>* current = tail_;
+        while(current) {
+            std::cout << current->data_ << " --> ";
+            current = current->prev_;
+        }
     }
 }
 
