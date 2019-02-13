@@ -13,9 +13,22 @@ namespace Container {
     template <typename T>
     class Iterator : public Const_iterator<T> {
     protected:
-        Iterator(Node<T>* current) : Const_iterator<T>(current) {}
-        
+        Iterator();
+        Iterator(Node<T>* current, const LinkedList<T>*);
     };
+    
+    
+    template <typename T>
+    Iterator<T>::Iterator() {
+        
+    }
+    
+    
+    template <typename T>
+    Iterator<T>::Iterator(Node<T>* current, const LinkedList<T>* linked_lst) : Const_iterator<T>(current){}
+    
+    
+    
 }
 
 

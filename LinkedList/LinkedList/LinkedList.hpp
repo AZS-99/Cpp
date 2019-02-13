@@ -25,17 +25,16 @@ namespace Container {
         void pop_back(const T&);
         void reverseprint() const;
         std::ostream& print(std::ostream& os) const;
-        Container::Const_iterator<T> cbegin() const;
-        Container::Const_iterator<T> cend() const;
-        
+        Const_iterator<T> cbegin() const;
+        Const_iterator<T> cend() const;
+        Const_iterator<T> crend() const;
+        Const_iterator<T> crbegin() const;
+        Iterator<T> begin();
+        Iterator<T> end();
         //REMEMBER WITH SENTINEL RETURN HEAD_->NXT AND TAIL!
-        Iterator<T> begin() const {
-            return Iterator<T>(head_);
-        }
+        Iterator<T> begin() const;
+        Iterator<T> end() const;
         
-        Iterator<T> end() const {
-            return Iterator<T>(nullptr);
-        }
     };
     
     
@@ -139,9 +138,24 @@ namespace Container {
     }
     
     
+    
+    
+    
     template <typename T>
     Const_iterator<T> LinkedList<T>::cend() const { //handle the case of doubling back from cend
         return Const_iterator<T>(nullptr, this);
+    }
+    
+    
+    template <typename T>
+    Const_iterator<T> LinkedList<T>::crbegin() const {
+        return Const_iterator<T>(nullptr, this);
+    }
+    
+    //Problem hers is that ++ uses nxt, not prev.
+    template <typename T>
+    Const_iterator<T> LinkedList<T>::crend() const {
+        return Const_iterator<T>(tail_, this);
     }
     
     
@@ -153,6 +167,32 @@ namespace Container {
             current = current->prev_;
         }
     }
+    
+    
+    template <typename T>
+    Iterator<T> LinkedList<T>::begin() {
+        return Iterator<T>(head_, this);
+    }
+    
+    
+    template <typename T>
+    Iterator<T> LinkedList<T>::end() {
+        return Iterator<T>(nullptr, this);
+    }
+    
+    
+    template <typename T>
+    Iterator<T> LinkedList<T>::begin() const {
+        return Iterator<T>(head_, this);
+    }
+    
+    
+    template <typename T>
+    Iterator<T> LinkedList<T>::end() const {
+        return Iterator<T>(this);
+    }
+    
+    
 }
 
 

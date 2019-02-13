@@ -23,28 +23,14 @@ namespace Container {
         Const_iterator(Node<T>*, const LinkedList<T>*);
         
     public:
-        Const_iterator();
-        const T& operator*();
-        Const_iterator<T> operator-(int);
-        Const_iterator operator++();     // ++x
-        Const_iterator operator++(int);  // x++
-        Const_iterator operator--();
-        bool operator==(Const_iterator other) {
-            return (current_ == other.current_);
-        }
-        
-        bool operator!=(Const_iterator other) {
-            return (current_ != other.current_);
-        }
-        
-        
+        const T& operator*() const;
+        Const_iterator& operator-(int);
+        Const_iterator& operator++();     // ++x
+        Const_iterator& operator++(int);  // x++
+        Const_iterator& operator--();
+        bool operator==(const Const_iterator& other) const;
+        bool operator!=(const Const_iterator& other) const;
     };
-    
-    
-    template <typename T>
-    Const_iterator<T>::Const_iterator() {
-        current_ = nullptr;
-    }
     
     
     template <typename T>
@@ -54,7 +40,7 @@ namespace Container {
     
     
     template <typename T>
-    Const_iterator<T> Const_iterator<T>::operator++(int) {
+    Const_iterator<T>& Const_iterator<T>::operator++(int) {
         //Remember that x++ returns the old value
         Const_iterator old = *this;
         current_ = current_->nxt_;
@@ -63,14 +49,17 @@ namespace Container {
     
     
     template <typename T>
-    Const_iterator<T> Const_iterator<T>::operator++() {
-        
-        current_ = current_->nxt_;
+    Const_iterator<T>& Const_iterator<T>::operator++() {
+        if (current_)
+            current_ = current_->nxt_;
+        else
+            current_ = linked_lst_->head_;
         return *this;
     }
     
+    
     template <typename T>
-    Const_iterator<T> Const_iterator<T>::operator--() {
+    Const_iterator<T>& Const_iterator<T>::operator--() {
         //Remember that x-- returns the old value
         if (current_)
             current_ = current_->prev_;
@@ -81,13 +70,13 @@ namespace Container {
     
     
     template <typename T>
-    const T& Const_iterator<T>::operator*() {
+    const T& Const_iterator<T>::operator*() const {
         return current_->data_;
     }
     
     
     template <typename T>
-    Const_iterator<T> Const_iterator<T>::operator-(int x) {
+    Const_iterator<T>& Const_iterator<T>::operator-(int x) {
         if (current_)
             current_ = current_->prev_;
         else
@@ -95,6 +84,17 @@ namespace Container {
         return *this;
     }
     
+    
+    template <typename T>
+    bool Const_iterator<T>::operator==(const Const_iterator& other) const {
+        return (current_ == other.current_);
+    }
+    
+    
+    template <typename T>
+    bool Const_iterator<T>::operator!=(const Const_iterator& other) const {
+        return (current_ != other.current_);
+    }
 }
 
 
