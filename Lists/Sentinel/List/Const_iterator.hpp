@@ -40,7 +40,10 @@ Const_iterator<T>& Const_iterator<T>::operator++() {
 
 template <typename T>
 const T& Const_iterator<T>::operator*() {
-    return current_->data_;
+    if (current_->nxt_ && current_->prev_)
+        return current_->data_;
+    auto default_value = new T{};
+    return *default_value;
 }
 
 

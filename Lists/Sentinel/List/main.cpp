@@ -8,15 +8,23 @@
 
 #include <iostream>
 #include "List.hpp"
+#include <list>
+
 int main(int argc, const char * argv[]) {
-    List<int> s;
+    List<std::string> s;
     
-    s.push_back(10);
-    s.push_back(20);
+    s.push_back("Adam");
+    s.push_back("Zack");
+    s.push_back("Saher");
     std::cout << s << std::endl;
-    
-    for (auto it = s.cbegin(); it != s.cend() ; ++it)
+    auto it = s.cbegin();
+    for (; it != s.cend() ; ++it)
         std::cout << *it << ", ";
+    std::cout << "Now: " << *it << std::endl;
+    ++it;
+    std::cout << "Now: " << *it << std::endl; 
+    
+    
     
     
 }
