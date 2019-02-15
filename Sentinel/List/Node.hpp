@@ -9,7 +9,7 @@
 #ifndef Node_h
 #define Node_h
 
-template <typename T> class Sentinel;
+template <typename T> class List;
 
 template <typename T>
 class Node {
@@ -17,7 +17,7 @@ class Node {
     Node* nxt_;
     Node* prev_;
     Node(const T& data = T{}, Node* nxt = nullptr, Node* prev = nullptr);
-    friend Sentinel<T>;
+    friend List<T>;
 };
 
 template <typename T>

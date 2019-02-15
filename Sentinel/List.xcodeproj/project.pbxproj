@@ -24,9 +24,9 @@
 
 /* Begin PBXFileReference section */
 		B74AB1AB22145B3B008E4855 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
-		B7847D08220363DC00C7E16C /* Sentinel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sentinel; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7847D08220363DC00C7E16C /* List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = List; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7847D0B220363DC00C7E16C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		B7847D12220363EA00C7E16C /* Sentinel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sentinel.h; sourceTree = "<group>"; };
+		B7847D12220363EA00C7E16C /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,7 @@
 		B7847CFF220363DC00C7E16C = {
 			isa = PBXGroup;
 			children = (
-				B7847D0A220363DC00C7E16C /* Sentinel */,
+				B7847D0A220363DC00C7E16C /* List */,
 				B7847D09220363DC00C7E16C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,27 +51,27 @@
 		B7847D09220363DC00C7E16C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B7847D08220363DC00C7E16C /* Sentinel */,
+				B7847D08220363DC00C7E16C /* List */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B7847D0A220363DC00C7E16C /* Sentinel */ = {
+		B7847D0A220363DC00C7E16C /* List */ = {
 			isa = PBXGroup;
 			children = (
 				B7847D0B220363DC00C7E16C /* main.cpp */,
 				B74AB1AB22145B3B008E4855 /* Node.hpp */,
-				B7847D12220363EA00C7E16C /* Sentinel.h */,
+				B7847D12220363EA00C7E16C /* List.hpp */,
 			);
-			path = Sentinel;
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B7847D07220363DC00C7E16C /* Sentinel */ = {
+		B7847D07220363DC00C7E16C /* List */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7847D0F220363DC00C7E16C /* Build configuration list for PBXNativeTarget "Sentinel" */;
+			buildConfigurationList = B7847D0F220363DC00C7E16C /* Build configuration list for PBXNativeTarget "List" */;
 			buildPhases = (
 				B7847D04220363DC00C7E16C /* Sources */,
 				B7847D05220363DC00C7E16C /* Frameworks */,
@@ -81,9 +81,9 @@
 			);
 			dependencies = (
 			);
-			name = Sentinel;
+			name = List;
 			productName = Sentinel;
-			productReference = B7847D08220363DC00C7E16C /* Sentinel */;
+			productReference = B7847D08220363DC00C7E16C /* List */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B7847D03220363DC00C7E16C /* Build configuration list for PBXProject "Sentinel" */;
+			buildConfigurationList = B7847D03220363DC00C7E16C /* Build configuration list for PBXProject "List" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B7847D07220363DC00C7E16C /* Sentinel */,
+				B7847D07220363DC00C7E16C /* List */,
 			);
 		};
 /* End PBXProject section */
@@ -259,7 +259,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B7847D03220363DC00C7E16C /* Build configuration list for PBXProject "Sentinel" */ = {
+		B7847D03220363DC00C7E16C /* Build configuration list for PBXProject "List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7847D0D220363DC00C7E16C /* Debug */,
@@ -268,7 +268,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B7847D0F220363DC00C7E16C /* Build configuration list for PBXNativeTarget "Sentinel" */ = {
+		B7847D0F220363DC00C7E16C /* Build configuration list for PBXNativeTarget "List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7847D10220363DC00C7E16C /* Debug */,

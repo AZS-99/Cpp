@@ -7,9 +7,9 @@
 //
 
 #include <iostream>
-#include "Sentinel.h"
+#include "List.hpp"
 int main(int argc, const char * argv[]) {
-    Sentinel<int> s;
+    List<int> s;
     try {
         s.push_back(10);
         s.push_back(20);

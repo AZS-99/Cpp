@@ -1,24 +1,24 @@
 //
-//  Sentinel.h
-//  Sentinel
+//  List.hpp
+//  List
 //
 //  Created by Adam Saher on 31/01/2019.
 //  Copyright © 2019 Adam Saher. All rights reserved.
 //
 
-#ifndef Sentinel_h
-#define Sentinel_h
+#ifndef List_h
+#define List_h
 #include <string>
 #include "Node.hpp"
 
 
 template <typename T>
-class Sentinel {
+class List {
     Node<T>* head_;
     Node<T>* tail_;
     size_t size_;
 public:
-    Sentinel();
+    List();
     void push_front(T data);
     void pop_front();
     void push_back(T data);
@@ -28,7 +28,7 @@ public:
 
 
 template <typename T>
-Sentinel<T>::Sentinel() {
+List<T>::List() {
     head_ = new Node<T>();
     tail_ = new Node<T>();
     head_->nxt_ = tail_;
@@ -38,7 +38,7 @@ Sentinel<T>::Sentinel() {
 
 
 template <typename T>
-void Sentinel<T>::push_front(T data) {
+void List<T>::push_front(T data) {
     Node<T>* node = new Node<T>(data, head_->nxt, head_);
     head_->nxt = node;
     node->nxt_->prev_ = node;
@@ -47,7 +47,7 @@ void Sentinel<T>::push_front(T data) {
 
 
 template <typename T>
-void Sentinel<T>::pop_front() {
+void List<T>::pop_front() {
     if (size_ == 0)
         throw std::string("Deleting from empty list!");
     Node<T>* rm = head_->nxt_;
@@ -59,7 +59,7 @@ void Sentinel<T>::pop_front() {
 
 
 template <typename T>
-void Sentinel<T>::push_back(T data) {
+void List<T>::push_back(T data) {
     Node<T>* node = new Node<T>(data, tail_, tail_->prev_);
     tail_->prev_ = node;
     node->prev_->nxt_ = node;
@@ -68,7 +68,7 @@ void Sentinel<T>::push_back(T data) {
 
 
 template <typename T>
-void Sentinel<T>::pop_back(T data) {
+void List<T>::pop_back(T data) {
     if (size_ > 0) {
         Node<T> tmp = tail_->prev_;
         tail_->prev_ = tmp->prev_;
@@ -79,7 +79,7 @@ void Sentinel<T>::pop_back(T data) {
 
 
 template <typename T>
-std::ostream& Sentinel<T>::print(std::ostream& os) const {
+std::ostream& List<T>::print(std::ostream& os) const {
     Node<T>* current = head_->nxt_;
     while (current != tail_) {
         os << current->data_ << " --> ";
@@ -91,7 +91,7 @@ std::ostream& Sentinel<T>::print(std::ostream& os) const {
 
 
 template <typename T>
-std::ostream& operator<<(std::ostream& os, Sentinel<T>& linked_lst) {
+std::ostream& operator<<(std::ostream& os, List<T>& linked_lst) {
     linked_lst.print(os);
     return os;
 }
