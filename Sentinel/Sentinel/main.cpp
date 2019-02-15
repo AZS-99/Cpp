@@ -11,7 +11,10 @@
 int main(int argc, const char * argv[]) {
     Sentinel<int> s;
     try {
-        s.pop_front();
+        s.push_back(10);
+        s.push_back(20);
+        std::cout << s << std::endl;
+        
     }
     catch (std::string& error) {
         std::cout << error << std::endl;
