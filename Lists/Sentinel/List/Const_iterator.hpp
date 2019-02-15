@@ -19,6 +19,7 @@ protected:
     Const_iterator(Node<T>*);
 public:
     Const_iterator& operator++();
+    Const_iterator operator++(int);
     const T& operator*();
     bool operator!=(const Const_iterator&) const;
 };
@@ -35,6 +36,14 @@ Const_iterator<T>& Const_iterator<T>::operator++() {
     if (current_->nxt_)
         current_ = current_->nxt_;
     return *this;
+}
+
+template <typename T>
+Const_iterator<T> Const_iterator<T>::operator++(int) {
+    auto old = *this;
+    if (current_->nxt_)
+        current_ = current_->nxt_;
+    return old;
 }
 
 
