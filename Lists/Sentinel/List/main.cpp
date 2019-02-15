@@ -19,7 +19,8 @@ int main(int argc, const char * argv[]) {
     s.push_back("Saher");
     std::cout << s << std::endl;
     auto it = s.cbegin();
-    for (; it != s.cend() ; it++)
+    auto it2 = s.cbegin();
+    for (; it != s.cend() ; it2 = it++)
         std::cout << *it << ", ";
     std::cout << "Now: " << *it << std::endl;
     ++it;

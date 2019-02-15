@@ -19,6 +19,10 @@ protected:
     Const_iterator(Node<T>*);
 public:
     Const_iterator& operator++();
+    Const_iterator(const Const_iterator&);
+    Const_iterator& operator=(const Const_iterator&);
+    Const_iterator(Const_iterator&&);
+    Const_iterator<T>& operator=(Const_iterator&& src);
     Const_iterator operator++(int);
     const T& operator*();
     bool operator!=(const Const_iterator&) const;
@@ -28,6 +32,36 @@ public:
 template <typename T>
 Const_iterator<T>::Const_iterator(Node<T>* node) {
     current_ =  node;
+}
+
+
+template <typename T>
+Const_iterator<T>::Const_iterator(const Const_iterator& src) {
+    std::cout << "copy_constructor" << std::endl;
+    current_ = src.current_;
+}
+
+
+template <typename T>
+Const_iterator<T>& Const_iterator<T>::operator=(const Const_iterator& src) {
+    std::cout << "copy_assignment" << std::endl;
+    current_ = src.current_;
+    return *this;
+}
+
+
+template <typename T>
+Const_iterator<T>::Const_iterator(Const_iterator<T>&& src) {
+    std::cout << "move_constructor" << std::endl;
+    current_ = src.current_;
+}
+
+
+template <typename T>
+Const_iterator<T>& Const_iterator<T>::operator=(Const_iterator&& src) {
+    std::cout << "move_assignment" << std::endl;
+    std::swap(current_, src.current_);
+    return *this;
 }
 
 
