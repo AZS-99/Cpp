@@ -27,6 +27,7 @@
 		B7847D08220363DC00C7E16C /* List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = List; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7847D0B220363DC00C7E16C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B7847D12220363EA00C7E16C /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		B7C0BE8C22174CD900F558D8 /* Const_iterator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Const_iterator.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 			children = (
 				B7847D0B220363DC00C7E16C /* main.cpp */,
 				B74AB1AB22145B3B008E4855 /* Node.hpp */,
+				B7C0BE8C22174CD900F558D8 /* Const_iterator.hpp */,
 				B7847D12220363EA00C7E16C /* List.hpp */,
 			);
 			path = List;

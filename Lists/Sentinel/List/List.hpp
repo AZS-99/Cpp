@@ -10,7 +10,7 @@
 #define List_h
 #include <string>
 #include "Node.hpp"
-
+#include "Const_iterator.hpp"
 
 template <typename T>
 class List {
@@ -23,6 +23,8 @@ public:
     void pop_front();
     void push_back(T data);
     void pop_back(T data);
+    Const_iterator<T> cbegin() const;
+    Const_iterator<T> cend() const;
     std::ostream& print(std::ostream&) const;
 };
 
@@ -33,7 +35,7 @@ List<T>::List() {
     tail_ = new Node<T>();
     head_->nxt_ = tail_;
     tail_->prev_ = head_;
-    size_ = 0;
+    size_ = 0u;
 }
 
 
@@ -49,7 +51,7 @@ void List<T>::push_front(T data) {
 template <typename T>
 void List<T>::pop_front() {
     if (size_ == 0)
-        throw std::string("Deleting from empty list!");
+        return;
     Node<T>* rm = head_->nxt_;
     head_->nxt_ = rm->nxt_;
     rm->nxt_->prev_ = head_;
@@ -87,6 +89,18 @@ std::ostream& List<T>::print(std::ostream& os) const {
     }
     
     return os << '|';
+}
+
+
+template <typename T>
+Const_iterator<T> List<T>::cbegin() const {
+    return Const_iterator<T>(head_->nxt_);
+}
+
+
+template <typename T>
+Const_iterator<T> List<T>::cend() const {
+    return Const_iterator<T>(tail_);
 }
 
 

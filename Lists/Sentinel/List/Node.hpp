@@ -10,6 +10,7 @@
 #define Node_h
 
 template <typename T> class List;
+template <typename T> class Const_iterator;
 
 template <typename T>
 class Node {
@@ -18,6 +19,7 @@ class Node {
     Node* prev_;
     Node(const T& data = T{}, Node* nxt = nullptr, Node* prev = nullptr);
     friend List<T>;
+    friend Const_iterator<T>;
 };
 
 template <typename T>
