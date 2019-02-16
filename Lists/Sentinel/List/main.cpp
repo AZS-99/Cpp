@@ -26,6 +26,10 @@ int main(int argc, const char * argv[]) {
     ++it;
     std::cout << "Now: " << *it << std::endl;
     
+    std::list<int> l;
+    l.push_back(1);
+    l.push_back(2);
+    std::cout << "end: " << *(--l.cend()) << std::endl;
     
     
 }

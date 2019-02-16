@@ -22,7 +22,7 @@ public:
     Const_iterator(const Const_iterator&);
     Const_iterator& operator=(const Const_iterator&);
     Const_iterator(Const_iterator&&);
-    Const_iterator<T>& operator=(Const_iterator&& src);
+    Const_iterator<T>& operator=(Const_iterator&&);
     Const_iterator operator++(int);
     const T& operator*();
     bool operator!=(const Const_iterator&) const;
@@ -83,10 +83,7 @@ Const_iterator<T> Const_iterator<T>::operator++(int) {
 
 template <typename T>
 const T& Const_iterator<T>::operator*() {
-    if (current_->nxt_ && current_->prev_)
-        return current_->data_;
-    auto default_value = new T{};
-    return *default_value;
+    return current_->data_; //in case of head/tail, data_ = T{} 
 }
 
 
