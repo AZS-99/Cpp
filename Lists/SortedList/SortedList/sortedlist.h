@@ -12,12 +12,13 @@
 #include <iostream>
 #include "Node.h"
 
+
 template <typename T>
 class SortedList {
     Node<T>* head_;
     Node<T>* tail_;
     unsigned size_;
-    void eat(Node<T>*);
+    
 public:
     class const_iterator; //Forward declaration
     class iterator;
@@ -65,15 +66,16 @@ public:
         iterator operator--(int);
         T& operator*() const;
     };
+private:
+    void trim(Node<T>*);
 };
 
 
 template <typename T>
 SortedList<T>::SortedList() {
     head_ = new Node<T>();
-    tail_ = new Node<T>();
+    tail_ = new Node<T>(T{}, nullptr, head_);
     head_->nxt_ = tail_;
-    tail_->prev_ = head_;
     size_ = 0u;
 }
 
@@ -94,10 +96,11 @@ SortedList<T>::~SortedList<T>() {
 template <typename T>
 SortedList<T>::SortedList(const SortedList<T>& other) {
     *this = SortedList();
+    Node<T>* node_ptr;
     for (auto it = other.cbegin(); it != other.cend(); ++it) {
-        Node<T>* node_ptr = new Node<T>(*it, tail_, tail_->prev_);
+        node_ptr = new Node<T>(*it, tail_, tail_->prev_);
+        tail_->prev_->nxt_ = node_ptr;
         tail_->prev_ = node_ptr;
-        node_ptr->prev_->nxt_ = node_ptr;
     }
     size_ = other.size_;
 }
@@ -107,23 +110,18 @@ template <typename T>
 SortedList<T>& SortedList<T>::operator=(const SortedList<T>& other) {
     if (this != &other) {
         auto it_this = begin();
-        auto it_other = other.cbegin();
-        while (it_other != other.cend()) {
+        for (auto it_other = other.cbegin(); it_other != other.cend(); ++it_other) {
             it_this.current_->data_ = it_other.current_->data_;
-            ++it_other;
-            if (!it_this.current_->nxt_) {
+            if (!it_this.current_->nxt_)
                 it_this.current_->nxt_ = new Node<T>(T{}, nullptr, it_this.current_);
-            }
             ++it_this;
         }
         tail_ = it_this.current_;
         if (tail_->nxt_) {
-            eat(tail_->nxt_);
+            trim(tail_->nxt_);
             tail_->nxt_ = nullptr;
         }
-        
         size_ = other.size_;
-        
     }
     return *this;
 }
@@ -256,9 +254,10 @@ typename SortedList<T>::iterator SortedList<T>::insert(const T &data) {
 
 
 template <typename T>
-void SortedList<T>::eat(Node<T> * node_ptr) {
+void SortedList<T>::trim(Node<T> * node_ptr) {
     if (node_ptr->nxt_)
-        eat(node_ptr->nxt_);
+        trim(node_ptr->nxt_);
+    std::cout << "value: " << node_ptr->data_ << std::endl;
     delete node_ptr;
 }
 

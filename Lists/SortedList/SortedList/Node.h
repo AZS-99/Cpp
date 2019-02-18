@@ -22,6 +22,7 @@ class Node {
 };
 
 
+/// Create a node holding a value: data, and a pointer to the next node and the previous one.
 template <typename T>
 Node<T>::Node(const T& data, Node* nxt, Node* prev){
     data_ = data;
