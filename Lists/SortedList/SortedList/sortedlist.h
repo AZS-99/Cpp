@@ -17,6 +17,7 @@ class SortedList {
     Node<T>* head_;
     Node<T>* tail_;
     unsigned size_;
+    void eat(Node<T>*);
 public:
     class const_iterator; //Forward declaration
     class iterator;
@@ -104,17 +105,25 @@ SortedList<T>::SortedList(const SortedList<T>& other) {
 
 template <typename T>
 SortedList<T>& SortedList<T>::operator=(const SortedList<T>& other) {
-    auto it_this = cbegin();
-    auto it_other = other.cbegin();
-    while (it_other != other.cend()) {
-        it_this.current_->data_ = it_other.current_->data_;
-        ++it_other;
-        if (it_this.current_->nxt_)
-            ++it_this;
-        else {
-            it_this.current_->nxt_ = new Node<T>(T{}, nullptr, it_this.current_);
+    if (this != &other) {
+        auto it_this = begin();
+        auto it_other = other.cbegin();
+        while (it_other != other.cend()) {
+            it_this.current_->data_ = it_other.current_->data_;
+            ++it_other;
+            if (!it_this.current_->nxt_) {
+                it_this.current_->nxt_ = new Node<T>(T{}, nullptr, it_this.current_);
+            }
             ++it_this;
         }
+        tail_ = it_this.current_;
+        if (tail_->nxt_) {
+            eat(tail_->nxt_);
+            tail_->nxt_ = nullptr;
+        }
+        
+        size_ = other.size_;
+        
     }
     return *this;
 }
@@ -126,9 +135,11 @@ SortedList<T>::SortedList(SortedList&& src) {
     head_ = src.head_;
     tail_ = src.tail_;
     
-    src.size() = 0;
-    src.head_ = nullptr;
-    src.tail_= nullptr;
+    src.size_ = 0;
+    src.head_ = new Node<T>();
+    src.tail_= new Node<T>();
+    src.head_->nxt_ = src.tail_;
+    src.tail_->prev_ = src.head_;
 }
 
 
@@ -138,6 +149,33 @@ SortedList<T>& SortedList<T>::operator=(SortedList<T>&& src) {
     std::swap(head_, src.head_);
     std::swap(tail_, src.tail_);
     return *this;
+}
+
+
+template <typename T>
+typename SortedList<T>::iterator SortedList<T>::erase(iterator it) {
+    if (it.current_ != tail_) {
+        Node<T>* tmp = it.current_;
+        tmp->nxt_->prev_ = tmp->prev_;
+        tmp->prev_->nxt_ = tmp->nxt_;
+        ++it;
+        delete tmp;
+        --size_;
+    }
+    return it;
+}
+
+
+template <typename T>
+typename SortedList<T>::iterator SortedList<T>::erase(iterator first, iterator last) { //What if last were ahead of first?!
+    Node<T>* tmp = first.current_->prev_;
+    for (auto it = ++first; it != last; ++it)
+        delete it.current_->prev_;
+    delete last.current_->prev_;
+    tmp->nxt_ = last.current_;
+    last.current_->prev_ = tmp;
+    
+    return last;
 }
 
 
@@ -168,7 +206,7 @@ typename SortedList<T>::iterator SortedList<T>::end() {
 template <typename T>
 typename SortedList<T>::const_iterator SortedList<T>::search(const T& data) const {
     auto it = cbegin();
-    while (it.current_->data_ < data)
+    while (it.current_->data_ < data && it != cend())
         ++it;
     return (it.current_->data_ == data? it : cend());
 }
@@ -177,7 +215,7 @@ typename SortedList<T>::const_iterator SortedList<T>::search(const T& data) cons
 template <typename T>
 typename SortedList<T>::iterator SortedList<T>::search(const T& data) {
     auto it = begin();
-    while (it.current_->data_ < data)
+    while (it.current_->data_ < data && it != end())
         ++it;
     return (it.current_->data_ == data? it : end());
 }
@@ -214,6 +252,14 @@ typename SortedList<T>::iterator SortedList<T>::insert(const T &data) {
     node_ptr->prev_->nxt_ = node_ptr;
     ++size_;
     return --it;
+}
+
+
+template <typename T>
+void SortedList<T>::eat(Node<T> * node_ptr) {
+    if (node_ptr->nxt_)
+        eat(node_ptr->nxt_);
+    delete node_ptr;
 }
 
 

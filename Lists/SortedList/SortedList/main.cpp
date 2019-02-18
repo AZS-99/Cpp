@@ -331,286 +331,288 @@ int main(void){
         }
     }
 //
-//    if(passtest){
-//        numPassed++;
-//        cout << "test 8: test erase function"  << endl;
-//        SortedList<Record>::iterator it;
-//        it=setIterator(recList,19);
-//        recList.erase(it);
-//        removeItem(mirror,19,20);
-//        if(!checkList(recList,mirror,19)){
-//            passtest=false;
-//            cout << "Error 8a: Bug in erase.  something went wrong when erasing last item from list" << endl;
-//#if VERBOSE >= 1
-//            printLists(recList,mirror,19);
-//#endif
-//        }
-//        recList.erase(recList.begin());
-//        removeItem(mirror,0,19);
-//        if(!checkList(recList,mirror,18)){
-//            passtest=false;
-//            cout << "Error 8b: Bug in erase. something went wrong when erasing first item from list" << endl;
-//#if VERBOSE >= 1
-//            printLists(recList,mirror,18);
-//#endif
-//        }
-//        for(int i=0;i<3 && passtest;i++){
-//            int pick=rand()%(18-i);
-//            it=setIterator(recList,pick);
-//            recList.erase(it);
-//            removeItem(mirror,pick,18-i);
-//            if(!checkList(recList,mirror,18-i-1)){
-//                passtest=false;
-//                cout << "Error 8c:  Bug in erase." << endl;
-//            }
-//        }
-//        intList.erase(intList.begin());
-//        removeItem(intMirror,0,cap);
-//        if(!checkList(intList,intMirror,cap-1)){
-//            passtest=false;
-//            cout << "Error 8d: Bug in erase, something went wrong when erasing first item from list" << endl;
-//        }
-//        intList.erase(intList.begin());
-//        removeItem(intMirror,0,cap-1);
-//        if(!checkList(intList,intMirror,cap-2)){
-//            passtest=false;
-//            cout << "Error 8e: Bug in erase. something went wrong when erasing first item from list a second time" << endl;
-//        }
-//        SortedList<int>::iterator it2;
-//        it2=setIterator(intList,cap-3);
-//        intList.erase(it2);
-//        removeItem(intMirror,cap-3,cap-2);
-//        if(!checkList(intList,intMirror,cap-3)){
-//            passtest=false;
-//            cout << "Error 8f: Bug in erase.  something went wrong when erasing last item from list" << endl;
-//        }
-//        it2=setIterator(intList,cap-4);
-//        intList.erase(it2);
-//        removeItem(intMirror,cap-4,cap-3);
-//        if(!checkList(intList,intMirror,cap-4)){
-//            passtest=false;
-//            cout << "Error 8g: Bug in erase. something went wrong when erasing last item from list a second time" << endl;
-//        }
-//#if VERBOSE > 1
-//        if(!passtest){
-//            printLists(intList,intMirror,cap-4);
-//        }
-//#endif
-//        for(int i=0;i<100 && passtest;i++){
-//            int pick=rand()%(cap-4-i);
-//            it2=setIterator(intList,pick);
-//            intList.erase(it2);
-//            removeItem(intMirror,pick,cap-4-i);
-//            if(!checkList(intList,intMirror,cap-i-5)){
-//                passtest=false;
-//                cout << "Error 8h:  Bug in erase." << endl;
-//#if VERBOSE > 1
-//                printLists(intList,intMirror,cap-i-5);
-//#endif
-//            }
-//        }
-//    }
+    if(passtest){
+        numPassed++;
+        cout << "test 8: test erase function"  << endl;
+        SortedList<Record>::iterator it;
+        it=setIterator(recList,19);
+        recList.erase(it);
+        removeItem(mirror,19,20);
+        if(!checkList(recList,mirror,19)){
+            passtest=false;
+            cout << "Error 8a: Bug in erase.  something went wrong when erasing last item from list" << endl;
+#if VERBOSE >= 1
+            printLists(recList,mirror,19);
+#endif
+        }
+        recList.erase(recList.begin());
+        removeItem(mirror,0,19);
+        if(!checkList(recList,mirror,18)){
+            passtest=false;
+            cout << "Error 8b: Bug in erase. something went wrong when erasing first item from list" << endl;
+#if VERBOSE >= 1
+            printLists(recList,mirror,18);
+#endif
+        }
+        for(int i=0;i<3 && passtest;i++){
+            int pick=rand()%(18-i);
+            it=setIterator(recList,pick);
+            recList.erase(it);
+            removeItem(mirror,pick,18-i);
+            if(!checkList(recList,mirror,18-i-1)){
+                passtest=false;
+                cout << "Error 8c:  Bug in erase." << endl;
+            }
+        }
+        intList.erase(intList.begin());
+        removeItem(intMirror,0,cap);
+        if(!checkList(intList,intMirror,cap-1)){
+            passtest=false;
+            cout << "Error 8d: Bug in erase, something went wrong when erasing first item from list" << endl;
+        }
+        intList.erase(intList.begin());
+        removeItem(intMirror,0,cap-1);
+        if(!checkList(intList,intMirror,cap-2)){
+            passtest=false;
+            cout << "Error 8e: Bug in erase. something went wrong when erasing first item from list a second time" << endl;
+        }
+        SortedList<int>::iterator it2;
+        it2=setIterator(intList,cap-3);
+        intList.erase(it2);
+        removeItem(intMirror,cap-3,cap-2);
+        if(!checkList(intList,intMirror,cap-3)){
+            passtest=false;
+            cout << "Error 8f: Bug in erase.  something went wrong when erasing last item from list" << endl;
+        }
+        it2=setIterator(intList,cap-4);
+        intList.erase(it2);
+        removeItem(intMirror,cap-4,cap-3);
+        if(!checkList(intList,intMirror,cap-4)){
+            passtest=false;
+            cout << "Error 8g: Bug in erase. something went wrong when erasing last item from list a second time" << endl;
+        }
+#if VERBOSE > 1
+        if(!passtest){
+            printLists(intList,intMirror,cap-4);
+        }
+#endif
+        for(int i=0;i<100 && passtest;i++){
+            int pick=rand()%(cap-4-i);
+            it2=setIterator(intList,pick);
+            intList.erase(it2);
+            removeItem(intMirror,pick,cap-4-i);
+            if(!checkList(intList,intMirror,cap-i-5)){
+                passtest=false;
+                cout << "Error 8h:  Bug in erase." << endl;
+#if VERBOSE > 1
+                printLists(intList,intMirror,cap-i-5);
+#endif
+            }
+        }
+    }
 //
 //
-//    if(passtest){
-//        numPassed++;
-//        cout << "test 9: ensure that copied list were not altered (proper deep copy was made) " << endl;
-//        if(!checkList(recCopy,data,20) || recCopy.empty() || recCopy.size()!=20 ||
-//           !checkList(recCopy2,data,20) || recCopy2.empty() || recCopy2.size()!=20){
-//            passtest=false;
-//            cout << "Error 9a: Bug in copy constructor, deep copy not made?"  << endl;
-//#if VERBOSE >= 1
-//            printLists(recCopy,data,20);
-//#endif
-//        }
-//        if(!checkList(intCopy,intData,cap)|| intCopy.empty() || intCopy.size()!=cap ||
-//           !checkList(intCopy,intData,cap)|| intCopy2.empty() || intCopy2.size()!=cap){
-//            passtest=false;
-//            cout << "Error 9b: Bug in copy constructor, deep copy not made?" << endl;
-//#if VERBOSE >= 2
-//            printLists(intCopy,intData,cap);
-//#endif
-//        }
-//    }
-//    if(passtest){
-//        numPassed++;
-//        cout << "test 10: test assignment operator"  << endl;
-//        recCopy2 = recList;
-//        intCopy2 = intList;
-//        if(!checkList(recCopy2,mirror,15)|| recCopy2.empty() || recCopy2.size()!=15){
-//            passtest=false;
-//            cout << "Error 10a: Bug in = operator"  << endl;
-//#if VERBOSE >= 1
-//            printLists(recCopy2,mirror,15);
-//#endif
-//        }
-//        if(!checkList(intCopy2, intMirror,cap-104) || intCopy2.empty() || intCopy2.size()!=cap-104){
-//            passtest=false;
-//            cout << "Error 10b: Bug in = operator"  << endl;
-//#if VERBOSE >= 2
-//            printLists(intCopy2,intMirror,cap-104);
-//#endif
-//        }
-//        if(!checkList(recCopy,data,20) || recCopy.empty() || recCopy.size()!=20){
-//            passtest=false;
-//            cout << "Error 10c: Bug in copy constructor or = operator, deep copy not made?"  << endl;
-//#if VERBOSE >= 1
-//            printLists(recCopy,data,20);
-//#endif
-//        }
-//        if(!checkList(intCopy,intData,cap)|| intCopy.empty() || intCopy.size()!=cap){
-//            passtest=false;
-//            cout << "Error 10d: Bug in copy constructor or = operator, deep copy not made?" << endl;
-//#if VERBOSE >= 2
-//            printLists(intCopy,intData,cap);
-//#endif
-//        }
-//    }
+    if(passtest){
+        numPassed++;
+        cout << "test 9: ensure that copied list were not altered (proper deep copy was made) " << endl;
+        if(!checkList(recCopy,data,20) || recCopy.empty() || recCopy.size()!=20 ||
+           !checkList(recCopy2,data,20) || recCopy2.empty() || recCopy2.size()!=20){
+            passtest=false;
+            cout << "Error 9a: Bug in copy constructor, deep copy not made?"  << endl;
+#if VERBOSE >= 1
+            printLists(recCopy,data,20);
+#endif
+        }
+        if(!checkList(intCopy,intData,cap)|| intCopy.empty() || intCopy.size()!=cap ||
+           !checkList(intCopy,intData,cap)|| intCopy2.empty() || intCopy2.size()!=cap){
+            passtest=false;
+            cout << "Error 9b: Bug in copy constructor, deep copy not made?" << endl;
+#if VERBOSE >= 2
+            printLists(intCopy,intData,cap);
+#endif
+        }
+    }
+    
+    
+    if(passtest){
+        numPassed++;
+        cout << "test 10: test assignment operator"  << endl;
+        recCopy2 = recList;
+        intCopy2 = intList;
+        if(!checkList(recCopy2,mirror,15)|| recCopy2.empty() || recCopy2.size()!=15){
+            passtest=false;
+            cout << "Error 10a: Bug in = operator"  << endl;
+#if VERBOSE >= 1
+            printLists(recCopy2,mirror,15);
+#endif
+        }
+        if(!checkList(intCopy2, intMirror,cap-104) || intCopy2.empty() || intCopy2.size()!=cap-104){
+            passtest=false;
+            cout << "Error 10b: Bug in = operator"  << endl;
+#if VERBOSE >= 2
+            printLists(intCopy2,intMirror,cap-104);
+#endif
+        }
+        if(!checkList(recCopy,data,20) || recCopy.empty() || recCopy.size()!=20){
+            passtest=false;
+            cout << "Error 10c: Bug in copy constructor or = operator, deep copy not made?"  << endl;
+#if VERBOSE >= 1
+            printLists(recCopy,data,20);
+#endif
+        }
+        if(!checkList(intCopy,intData,cap)|| intCopy.empty() || intCopy.size()!=cap){
+            passtest=false;
+            cout << "Error 10d: Bug in copy constructor or = operator, deep copy not made?" << endl;
+#if VERBOSE >= 2
+            printLists(intCopy,intData,cap);
+#endif
+        }
+    }
 //
-//    if(passtest){
-//        recCopy2.erase(recCopy2.begin());
-//        intCopy2.erase(intCopy2.begin());
-//        numPassed++;
-//        cout << "test 11: test assignment operator (deep copy)"  << endl;
-//        if(!checkList(recList,mirror,15)|| recList.empty() || recList.size()!=15){
-//            passtest=false;
-//            cout << "Error 11a: Bug in = operator, no deepcopy?"  << endl;
-//        }
-//        if(!checkList(intList,intMirror,cap-104)|| intList.empty() || intList.size()!=cap-104){
-//            passtest=false;
-//            cout << "Error 11b: Bug in = operator,no deep copy?"  << endl;
-//        }
-//    }
+    if(passtest){
+        recCopy2.erase(recCopy2.begin());
+        intCopy2.erase(intCopy2.begin());
+        numPassed++;
+        cout << "test 11: test assignment operator (deep copy)"  << endl;
+        if(!checkList(recList,mirror,15)|| recList.empty() || recList.size()!=15){
+            passtest=false;
+            cout << "Error 11a: Bug in = operator, no deepcopy?"  << endl;
+        }
+        if(!checkList(intList,intMirror,cap-104)|| intList.empty() || intList.size()!=cap-104){
+            passtest=false;
+            cout << "Error 11b: Bug in = operator,no deep copy?"  << endl;
+        }
+    }
 //
-//    if(passtest){
-//        numPassed++;
-//        cout << "test 12: search for removed items" << endl;
-//        int pick[2]={0,19};
-//        for(int i=0;i<2;i++){
-//            auto it =recList.search(data[pick[i]]);
-//            if(it!=recList.end()){
-//                cout << "Error 12a: Bug in search, returned iterator is not correct" << endl;
-//                passtest=false;
-//            }
-//        }
-//
-//    }
-//    if(passtest){
-//        int pick[4]={0,1,cap-1,cap-2};
-//        for(int i=0;i<4;i++){
-//            auto it = intList.search(intData[pick[i]]);
-//            if(it != intList.end()){
-//
-//                passtest=false;
-//                cout << "Error 12b: Bug in search."<< endl;
-//            }
-//        }
-//    }
-//    if(passtest){
-//        numPassed++;
-//        cout << "test 13: test erase(a,b) function"  << endl;
-//        SortedList<Record>::iterator it;
-//        SortedList<Record>::iterator it2;
-//        Record tmp[20];
-//        duplicateArray(tmp,mirror,15);
-//        removeItem(tmp,0,15);
-//        it=setIterator(recCopy2,2);
-//        it2=setIterator(recCopy2,5);
-//
-//        recCopy2.erase(it,it2);
-//        removeItem(tmp,4,14);
-//        removeItem(tmp,3,13);
-//        removeItem(tmp,2,13);
-//        if(!checkList(recCopy2,tmp,11)){
-//            passtest=false;
-//            cout << "Error 13a: Bug erase(it) function"  << endl;
-//#if VERBOSE >= 1
-//            printLists(recCopy2,tmp,11);
-//#endif
-//        }
-//        if(!checkList(recList,mirror,15)){
-//            passtest=false;
-//            cout << "Error 13b: assignment operator"  << endl;
-//#if VERBOSE >= 1
-//            printLists(recList,mirror,15);
-//#endif
-//
-//        }
-//
-//    }
-//
-//    if(passtest){
-//        numPassed++;
-//        cout << "test 14: test erase(front,end()) function"  << endl;
-//        SortedList<Record>::iterator it;
-//        SortedList<Record>::iterator it2;
-//        Record tmp[20];
-//        recCopy2=recList;
-//        intCopy2=intList;
-//        duplicateArray(tmp,mirror,15);
-//        it=setIterator(recCopy2,11);
-//
-//        recCopy2.erase(it,recCopy2.end());
-//        removeItem(tmp,14,15);
-//        removeItem(tmp,13,14);
-//        removeItem(tmp,12,13);
-//        removeItem(tmp,11,12);
-//        if(!checkList(recCopy2,tmp,11)){
-//            passtest=false;
-//            cout << "Error 14a: Bug erase function"  << endl;
-//#if VERBOSE >= 1
-//            printLists(recCopy2,tmp,11);
-//#endif
-//        }
-//        if(!checkList(recList,mirror,15)){
-//            passtest=false;
-//            cout << "Error 14b: assignment operator, (deep copy not made?)"  << endl;
-//#if VERBOSE >= 1
-//            printLists(recList,mirror,15);
-//#endif
-//
-//        }
-//    }
-//    SortedList<Record>::iterator it=recList.begin();
-//    SortedList<Record>::iterator it2;
-//    SortedList<Record> recCopy3=std::move(recList);
-//    if(passtest){
-//        numPassed++;
-//        it2=recCopy3.begin();
-//        cout << "test 15: test move constructor"  << endl;
-//
-//        if(!checkList(recCopy3,mirror,15) || recCopy3.size() != 15 || recCopy3.empty()){
-//            passtest=false;
-//            cout << "Error 15a: Bug in move constructor"  << endl;
-//#if VERBOSE >= 1
-//            printLists(recCopy3,mirror,15);
-//#endif
-//        }
-//        if(passtest && it != it2){
-//            passtest = false;
-//            cout << "Error 15b: Move constructor is suppose to \"steal\" the data from rhs" << endl;
-//        }
-//    }
-//
-//    if(passtest){
-//        numPassed++;
-//        recList=recCopy3;
-//        it = recList.begin();
-//        cout << "test 16: test move assignment operator"  << endl;
-//        recCopy3=std::move(recList);
-//        it2=recCopy3.begin();
-//        if(!checkList(recCopy3,mirror,15)){
-//            passtest=false;
-//            cout << "Error 16a: Bug in move assignment operator"  << endl;
-//#if VERBOSE >= 1
-//            printLists(recCopy3,mirror,15);
-//#endif
-//        }
-//        if(passtest && it != it2){
-//            passtest = false;
-//            cout << "Error 16b: Move constructor is suppose to \"steal\" the data from rhs" << endl;
-//        }
-//    }
+    if(passtest){
+        numPassed++;
+        cout << "test 12: search for removed items" << endl;
+        int pick[2]={0,19};
+        for(int i=0;i<2;i++){
+            auto it =recList.search(data[pick[i]]);
+            if(it!=recList.end()){
+                cout << "Error 12a: Bug in search, returned iterator is not correct" << endl;
+                passtest=false;
+            }
+        }
+
+    }
+    if(passtest){
+        int pick[4]={0,1,cap-1,cap-2};
+        for(int i=0;i<4;i++){
+            auto it = intList.search(intData[pick[i]]);
+            if(it != intList.end()){
+
+                passtest=false;
+                cout << "Error 12b: Bug in search."<< endl;
+            }
+        }
+    }
+    if(passtest){
+        numPassed++;
+        cout << "test 13: test erase(a,b) function"  << endl;
+        SortedList<Record>::iterator it;
+        SortedList<Record>::iterator it2;
+        Record tmp[20];
+        duplicateArray(tmp,mirror,15);
+        removeItem(tmp,0,15);
+        it=setIterator(recCopy2,2);
+        it2=setIterator(recCopy2,5);
+
+        recCopy2.erase(it,it2);
+        removeItem(tmp,4,14);
+        removeItem(tmp,3,13);
+        removeItem(tmp,2,13);
+        if(!checkList(recCopy2,tmp,11)){
+            passtest=false;
+            cout << "Error 13a: Bug erase(it) function"  << endl;
+#if VERBOSE >= 1
+            printLists(recCopy2,tmp,11);
+#endif
+        }
+        if(!checkList(recList,mirror,15)){
+            passtest=false;
+            cout << "Error 13b: assignment operator"  << endl;
+#if VERBOSE >= 1
+            printLists(recList,mirror,15);
+#endif
+
+        }
+
+    }
+
+    if(passtest){
+        numPassed++;
+        cout << "test 14: test erase(front,end()) function"  << endl;
+        SortedList<Record>::iterator it;
+        SortedList<Record>::iterator it2;
+        Record tmp[20];
+        recCopy2=recList;
+        intCopy2=intList;
+        duplicateArray(tmp,mirror,15);
+        it=setIterator(recCopy2,11);
+
+        recCopy2.erase(it,recCopy2.end());
+        removeItem(tmp,14,15);
+        removeItem(tmp,13,14);
+        removeItem(tmp,12,13);
+        removeItem(tmp,11,12);
+        if(!checkList(recCopy2,tmp,11)){
+            passtest=false;
+            cout << "Error 14a: Bug erase function"  << endl;
+#if VERBOSE >= 1
+            printLists(recCopy2,tmp,11);
+#endif
+        }
+        if(!checkList(recList,mirror,15)){
+            passtest=false;
+            cout << "Error 14b: assignment operator, (deep copy not made?)"  << endl;
+#if VERBOSE >= 1
+            printLists(recList,mirror,15);
+#endif
+
+        }
+    }
+    SortedList<Record>::iterator it=recList.begin();
+    SortedList<Record>::iterator it2;
+    SortedList<Record> recCopy3=std::move(recList);
+    if(passtest){
+        numPassed++;
+        it2=recCopy3.begin();
+        cout << "test 15: test move constructor"  << endl;
+
+        if(!checkList(recCopy3,mirror,15) || recCopy3.size() != 15 || recCopy3.empty()){
+            passtest=false;
+            cout << "Error 15a: Bug in move constructor"  << endl;
+#if VERBOSE >= 1
+            printLists(recCopy3,mirror,15);
+#endif
+        }
+        if(passtest && it != it2){
+            passtest = false;
+            cout << "Error 15b: Move constructor is suppose to \"steal\" the data from rhs" << endl;
+        }
+    }
+
+    if(passtest){
+        numPassed++;
+        recList=recCopy3;
+        it = recList.begin();
+        cout << "test 16: test move assignment operator"  << endl;
+        recCopy3=std::move(recList);
+        it2=recCopy3.begin();
+        if(!checkList(recCopy3,mirror,15)){
+            passtest=false;
+            cout << "Error 16a: Bug in move assignment operator"  << endl;
+#if VERBOSE >= 1
+            printLists(recCopy3,mirror,15);
+#endif
+        }
+        if(passtest && it != it2){
+            passtest = false;
+            cout << "Error 16b: Move constructor is suppose to \"steal\" the data from rhs" << endl;
+        }
+    }
     if(passtest){
         numPassed++;
     }
@@ -702,10 +704,12 @@ bool checkList(const SortedList<T>& list,const T array[],int sz){
     for(i=0;i<sz && it!=list.cend() && rc;i++,it++){
         if(*it != array[i]){
             rc=false;
+            std::cout << "first!" << std::endl;
         }
     }
     if(it!=list.cend() || i < sz){
         rc=false;
+        std::cout << "second!" << std::endl;
     }
     return rc;
 }
