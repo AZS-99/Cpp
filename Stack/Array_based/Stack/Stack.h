@@ -1,14 +1,13 @@
 //
-//  Stack2.hpp
+//  Stack.h
 //  Stack
 //
-//  Created by Adam Saher on 14/02/2019.
+//  Created by Adam Saher on 19/02/2019.
 //  Copyright © 2019 Adam Saher. All rights reserved.
 //
 
-#ifndef Stack2_h
-#define Stack2_h
-
+#ifndef Stack_h
+#define Stack_h
 const size_t INITIAL_CAPACITY = 10;
 
 template <class T>
@@ -49,4 +48,5 @@ bool Stack2<T>::is_empty() {
     return size_ == 0;
 }
 
-#endif /* Stack2_h */
+
+#endif /* Stack_h */
