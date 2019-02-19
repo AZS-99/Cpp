@@ -82,13 +82,10 @@ SortedList<T>::SortedList() {
 
 template <typename T>
 SortedList<T>::~SortedList<T>() {
-    auto it = const_iterator(tail_->prev_);
-    while (it.current_ != head_) {
-        delete it.current_->nxt_;
-        --it;
-    }
-    delete head_;
-    
+    for (auto it = ++begin(); it != end(); ++it)
+        delete it.current_->prev_;
+    delete tail_->prev_;
+    delete tail_;
 }
 
 
