@@ -8,44 +8,68 @@
 
 #ifndef Stack_h
 #define Stack_h
-const size_t INITIAL_CAPACITY = 10;
+const unsigned INITIAL_CAPACITY = 10;
 
 template <class T>
-class Stack2 {
+class Stack {
     T* stack_;
-    size_t capacity_;
-    size_t size_;
+    unsigned capacity_;
+    unsigned size_;
     
 public:
-    Stack2();
-    void push();
+    Stack();
+    void push(const T& data);
     void pop();
     bool is_empty();
     T peek() const;
     
 private:
-    void grow() {
-        T* tmp = new T[2 * capacity_];
-        for (auto i = 0u; i < size_; ++i)
-            tmp[i] = stack_[i];
-        std::swap(stack_, tmp);
-        delete[] tmp;
-        ++size_;
-    }
+    void grow();
 };
 
 
 template <typename T>
-Stack2<T>::Stack2() {
-    stack_ = new T[INITIAL_CAPACITY];
-    size_ = 0u;
+Stack<T>::Stack() {
     capacity_ = INITIAL_CAPACITY;
+    stack_ = new T[capacity_];
+    size_ = 0u;
 }
 
 
 template <typename T>
-bool Stack2<T>::is_empty() {
-    return size_ == 0;
+bool Stack<T>::is_empty() {
+    return size_ == 0u;
+}
+
+
+template <typename T>
+void Stack<T>::push(const T& data) {
+    stack_[size_++] = data;
+    if (size_ == capacity_)
+        grow();
+}
+
+
+template <typename T>
+void Stack<T>::pop() {
+    --size_;
+}
+
+
+template <typename T>
+T Stack<T>::peek() const {
+    return (size_ > 0? stack_[size_ - 1] : T{});
+}
+
+
+template <typename T>
+void Stack<T>::grow() {
+    capacity_ *= 2;
+    T* tmp = new T[capacity_];
+    for (auto i = 0u; i < size_; ++i)
+        tmp[i] = stack_[i];
+    std::swap(stack_, tmp);
+    delete[] tmp;
 }
 
 
