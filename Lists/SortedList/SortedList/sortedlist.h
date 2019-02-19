@@ -82,20 +82,21 @@ SortedList<T>::SortedList() {
 
 template <typename T>
 SortedList<T>::~SortedList<T>() {
-    if (this->head_ && this->tail_) {
-        auto it = const_iterator(tail_->prev_);
-        while (it.current_ != head_) {
-            delete it.current_->nxt_;
-            --it;
-        }
-        delete head_;
+    auto it = const_iterator(tail_->prev_);
+    while (it.current_ != head_) {
+        delete it.current_->nxt_;
+        --it;
     }
+    delete head_;
+    
 }
 
 
 template <typename T>
 SortedList<T>::SortedList(const SortedList<T>& other) {
-    *this = SortedList();
+    head_ = new Node<T>();
+    tail_ = new Node<T>(T{}, nullptr, head_);
+    head_->nxt_ = tail_;
     Node<T>* node_ptr;
     for (auto it = other.cbegin(); it != other.cend(); ++it) {
         node_ptr = new Node<T>(*it, tail_, tail_->prev_);
@@ -133,11 +134,10 @@ SortedList<T>::SortedList(SortedList&& src) {
     head_ = src.head_;
     tail_ = src.tail_;
     
-    src.size_ = 0;
+    src.size_ = 0u;
     src.head_ = new Node<T>();
-    src.tail_= new Node<T>();
+    src.tail_= new Node<T>(T{}, nullptr, src.head_);
     src.head_->nxt_ = src.tail_;
-    src.tail_->prev_ = src.head_;
 }
 
 
@@ -257,7 +257,6 @@ template <typename T>
 void SortedList<T>::trim(Node<T> * node_ptr) {
     if (node_ptr->nxt_)
         trim(node_ptr->nxt_);
-    std::cout << "value: " << node_ptr->data_ << std::endl;
     delete node_ptr;
 }
 
