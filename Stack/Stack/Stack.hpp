@@ -15,6 +15,7 @@ class Stack {
     std::list<T> stack_;
 public:
     void push(const T& data);
+    void pop();
     T peek() const;
     bool isEmpty() const;
 };
@@ -23,6 +24,12 @@ public:
 template <typename T>
 void Stack<T>::push(const T& data) {
     stack_.push_back(data);
+}
+
+
+template <typename T>
+void Stack<T>::pop() {
+    stack_.pop_back();
 }
 
 
