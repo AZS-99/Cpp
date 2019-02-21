@@ -109,7 +109,7 @@ SortedList<T>& SortedList<T>::operator=(const SortedList<T>& other) {
     if (this != &other) {
         auto it_this = begin();
         for (auto it_other = other.cbegin(); it_other != other.cend(); ++it_other) {
-            it_this.current_->data_ = it_other.current_->data_;
+            *it_this = *it_other;
             if (!it_this.current_->nxt_)
                 it_this.current_->nxt_ = new Node<T>(T{}, nullptr, it_this.current_);
             ++it_this;
@@ -201,9 +201,9 @@ typename SortedList<T>::iterator SortedList<T>::end() {
 template <typename T>
 typename SortedList<T>::const_iterator SortedList<T>::search(const T& data) const {
     auto it = cbegin();
-    while (it.current_->data_ < data && it != cend())
+    while (*it < data && it != cend())
         ++it;
-    return (it.current_->data_ == data? it : cend());
+    return (*it == data? it : cend());
 }
 
 
