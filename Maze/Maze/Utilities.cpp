@@ -8,22 +8,40 @@
 
 #include <stdio.h>
 #include "Maze.hpp"
-bool can_move_up(const Maze&, const Coord&);
+
 
 int findPath (Maze& theMaze, const Coord& start, const Coord& end, Coord path[]){
+    if (start.x >= theMaze.width() || start.x < 0 || start.y >= theMaze.height() || start.y < 0)
+        return 0;
+    
+    if (end.x >= theMaze.width() || end.x < 0 || end.y >= theMaze.height() || end.y < 0)
+        return 0;
+    
+    if (theMaze.isWall(start) || theMaze.isWall(end))
+        return 0;
+    
     if (start == end) {
+        theMaze.mark(start);
         path[0] = start;
         return 1;
     }
-    if (can_move_up(theMaze, start)) {
+    
+    if (start.y + 1 < theMaze.height()) {
         return findPath(theMaze, Coord(start.x, start.y + 1), end, path);
     }
+    
+    if (start.y - 1 >= 0) {
+        return findPath(theMaze, Coord(start.x, start.y - 1), end, path);
+    }
+    
+    if (start.x + 1 < theMaze.width()) {
+        return findPath(theMaze, Coord(start.x + 1, start.y), end, path);
+    }
+    
+    if (start.x - 1 >= 0) {
+        return findPath(theMaze, Coord(start.x - 1, start.y), end, path);
+    }
+    
     return 0;
-    
-    
 }
 
-
-bool can_move_up(const Maze& maze, const Coord& point) {
-    return point.y + 1 < maze.height();
-}
