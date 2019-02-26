@@ -66,3 +66,25 @@ std::ostream& operator<<(std::ostream& os, const String& str) {
 }
 
 
+char& String::operator[](unsigned index) const {
+    return string_[index];
+}
+
+
+char& String::at(unsigned index) const{
+    if (index > size_ - 1)
+        throw std::out_of_range("The index you have entered is out of bounds");
+    return string_[index];
+}
+
+
+char& String::back() const {
+    return string_[size_ - 1];
+}
+
+
+bool String::empty() const {
+    return size_ == 0;
+}
+
+

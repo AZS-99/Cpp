@@ -23,7 +23,10 @@ public:
     String(String&&);
     String& operator=(const String&);
     String& operator=(String&&);
-    
+    bool empty() const;
+    char& operator[](unsigned) const;
+    char& at(unsigned) const;
+    char& back() const;
 };
 
 
