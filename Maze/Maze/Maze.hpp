@@ -29,6 +29,7 @@ struct Coord{
 };
 bool operator==(const Coord& left, const Coord& right);
 bool operator!=(const Coord& left, const Coord& right);
+std::ostream& operator<<(std::ostream&, const Coord&);
 const int MARKED = 2;
 const int WALL = 1;
 const int EMPTY = 0;

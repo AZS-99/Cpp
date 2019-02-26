@@ -109,3 +109,9 @@ bool operator!=(const Coord& left, const Coord& right){
 	}
 	return rc;
 }
+
+std::ostream& operator<<(std::ostream& os, const Coord& point) {
+    os << '(' << point.x << ", " << point.y << ')';
+    return os;
+}
+

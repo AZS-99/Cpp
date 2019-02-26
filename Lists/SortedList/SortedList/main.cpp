@@ -8,7 +8,7 @@
 /*                                                                   */
 /*********************************************************************/
 
-#include "sortedlist.h"
+#include "SortedList.h"
 #include <cstring>
 #include <cstdlib>
 #include <iostream>

@@ -43,6 +43,7 @@ int main(void){
         pathLength=findPath (*m, start, end, path);
         original=new Maze(mazeFiles[i]);
         cout << "checking path for Test #" << i+1 << endl;
+        
         if(testPath(original, m, start, end, path, pathLength)){
             cout << "Test # " << i+1 << " passed" << endl;
             numPassed++;
@@ -107,26 +108,34 @@ bool search(const Coord& c, const Coord path[], int n){
     return found;
 }
 bool testPath(const Maze* original,const Maze* marked, Coord start, Coord end, const Coord path[], int n){
+    std::cout << "n: " << n << std::endl;
+    for (auto i = 0u; i < n; ++i)
+        std::cout << path[i] << endl;
     bool isGood=true;
     if(n > 0){
         if(path[0]!= start){
+            std::cout << "Failed at first" << std::endl;
             isGood=false;
         }
         if(path[n-1]!= end){
+            std::cout << "Failed at second" << std::endl;
             isGood=false;
         }
         for(int i=1;isGood && i<n;i++){
             //ensures each point on path is beside the next
             if(!isBeside(path[i],path[i-1])){
+                std::cout << "failed at third" << std::endl;
                 isGood=false;
             }
             //ensures that the point of path was originally empty
             //ie you can't run through walls
             if(!original->isEmpty(path[i])){
+                std::cout << "Failed at fourth" << std::endl;
                 isGood=false;
             }
             //ensure that the path is marked on the path
             if(!marked->isMarked(path[i])){
+                std::cout << "Failed at fifth" << std::endl;
                 isGood=false;
             }
         }
@@ -138,6 +147,7 @@ bool testPath(const Maze* original,const Maze* marked, Coord start, Coord end, c
             //this sequence ensures that only points on the path are marked
             if(marked->isMarked(curr)){
                 if(!search(curr,path,n)){
+                    std::cout << "Failed at sixth" << std::endl;
                     isGood = false;
                 }
             }

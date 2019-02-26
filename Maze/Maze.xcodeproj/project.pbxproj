@@ -30,9 +30,9 @@
 		B706BB4B2220F15800277994 /* Maze.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Maze.cpp; sourceTree = "<group>"; };
 		B706BB4C2220F15800277994 /* Maze.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Maze.hpp; sourceTree = "<group>"; };
 		B706BB4F2220F20900277994 /* Utilities.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Utilities.cpp; sourceTree = "<group>"; };
-		B73FD64E222337F700F82A3D /* maze1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = maze1.txt; sourceTree = "<group>"; };
-		B73FD64F2223383500F82A3D /* maze2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = maze2.txt; sourceTree = "<group>"; };
-		B73FD6502223387C00F82A3D /* maze3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = maze3.txt; sourceTree = "<group>"; };
+		B73FD65122234FC500F82A3D /* maze1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = maze1.txt; path = Build/Products/Debug/maze1.txt; sourceTree = "<group>"; };
+		B73FD65222234FC500F82A3D /* maze2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = maze2.txt; path = Build/Products/Debug/maze2.txt; sourceTree = "<group>"; };
+		B73FD65322234FC500F82A3D /* maze3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = maze3.txt; path = Build/Products/Debug/maze3.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +51,9 @@
 			children = (
 				B706BB432220F0F300277994 /* Maze */,
 				B706BB422220F0F300277994 /* Products */,
+				B73FD65122234FC500F82A3D /* maze1.txt */,
+				B73FD65222234FC500F82A3D /* maze2.txt */,
+				B73FD65322234FC500F82A3D /* maze3.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,13 +68,10 @@
 		B706BB432220F0F300277994 /* Maze */ = {
 			isa = PBXGroup;
 			children = (
-				B706BB442220F0F300277994 /* main.cpp */,
 				B706BB4B2220F15800277994 /* Maze.cpp */,
 				B706BB4C2220F15800277994 /* Maze.hpp */,
 				B706BB4F2220F20900277994 /* Utilities.cpp */,
-				B73FD64E222337F700F82A3D /* maze1.txt */,
-				B73FD64F2223383500F82A3D /* maze2.txt */,
-				B73FD6502223387C00F82A3D /* maze3.txt */,
+				B706BB442220F0F300277994 /* main.cpp */,
 			);
 			path = Maze;
 			sourceTree = "<group>";
