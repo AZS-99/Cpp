@@ -27,5 +27,7 @@ int main(int argc, const char * argv[]) {
     std::cout << math::floor(12.4) << std::endl;
     std::cout << "sqrt = " << math::sqrt(100000000) << std::endl;
     
+    std::cout << "rand: " << rand() << std::endl;
+    
     return 0;
 }

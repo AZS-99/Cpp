@@ -7,6 +7,7 @@
 //
 
 #include "Math.hpp"
+#include <cmath>
 
 namespace math {
     
@@ -65,5 +66,10 @@ namespace math {
         if (num < 9)
             return 1;
         return number_of_digits(num / 10) + 1;
+    }
+    
+    
+    unsigned random_between(unsigned x, unsigned y) {
+        return rand();
     }
 }

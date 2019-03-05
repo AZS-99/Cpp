@@ -20,7 +20,16 @@ namespace math {
     size_t* split(size_t);
     size_t sum(const size_t&);
     size_t sum(const size_t&, const size_t&);
-    unsigned int number_of_digits(const size_t&);
+    unsigned number_of_digits(const size_t&);
+    
+    /**
+     Return a random number between x and y
+
+     @param x a positive integer included in the scope
+     @param y a positive integer that is the end of the scope; included.
+     @return a positive random number n, where x <= n <= y
+     */
+    unsigned random_between(unsigned x, unsigned y);
     
     
     template <typename T, typename = typename std::enable_if<std::is_arithmetic<T>::value, T>::type>
