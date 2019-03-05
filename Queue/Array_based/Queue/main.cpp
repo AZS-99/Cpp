@@ -12,8 +12,8 @@ int main(int argc, const char * argv[]) {
     Queue<unsigned> queue;
     queue.enqueue(10);
     queue.enqueue(20);
-    
     queue.enqueue(30);
+    
     queue.enqueue(40);
     queue.enqueue(50);
     queue.enqueue(60);
@@ -21,8 +21,10 @@ int main(int argc, const char * argv[]) {
     queue.enqueue(70);
     queue.enqueue(80);
     queue.enqueue(90);
+    
+    std::cout << std::endl << std::endl;
     for (unsigned i = 0; i < 9; ++i) {
-        std::cout << queue.peek() << std::endl;
+        std::cout << "value: " << queue.peek() << std::endl;
         queue.dequeue();
     }
     return 0;

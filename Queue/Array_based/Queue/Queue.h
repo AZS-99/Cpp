@@ -12,7 +12,7 @@
 const unsigned INITIAL_CAPACITY = 3;
 
 template <typename T>
-class Queue {
+struct Queue {
     T* queue_;
     unsigned capacity_;
     unsigned front_index_;
@@ -70,11 +70,10 @@ template <typename T>
 void Queue<T>::enqueue(const T & data) {
     queue_[back_index_] = data;
      ++size_;
+    back_index_ = ((back_index_ + 1) % capacity_); 
     //If the array is full, grow it.
     if (size_ == capacity_)
         grow();
-    else
-        back_index_ = ((back_index_ + 1) % capacity_);
 }
 
 
@@ -107,7 +106,7 @@ void Queue<T>::grow() {
     std::swap(tmp, queue_);
     delete[] tmp;
     front_index_ = 0;
-    back_index_ = capacity_ - 1;
+    back_index_ = capacity_;
     capacity_ *= 2;
 }
 
