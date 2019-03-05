@@ -38,7 +38,7 @@ Queue<T>::Queue() {
 template <typename T>
 void Queue<T>::push(const T & data) {
     queue_[back_index_] = data;
-    if ((back_index_ + 1) % capacity_ == front_index_) 
+    if ((back_index_ + 1) % capacity_ == front_index_)
         grow();
     else
         back_index_ = ((back_index_ + 1) % capacity_);
