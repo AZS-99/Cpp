@@ -9,7 +9,7 @@
 #ifndef Queue_h
 #define Queue_h
 
-const unsigned INITIAL_CAPACITY = 5;
+const unsigned INITIAL_CAPACITY = 3;
 
 template <typename T>
 class Queue {
@@ -25,13 +25,13 @@ public:
 
      @param T& The value needed to be appended to the queue passed by reference
      */
-    void push(const T&);
+    void enqueue(const T&);
     
     
     /**
-     Remove the first value from the queue
+     If the queue is not empty, remove the first value from the queue
      */
-    void pop();
+    void dequeue();
     
     
     /**
@@ -67,7 +67,7 @@ Queue<T>::Queue() {
 
 
 template <typename T>
-void Queue<T>::push(const T & data) {
+void Queue<T>::enqueue(const T & data) {
     queue_[back_index_] = data;
      ++size_;
     //If the array is full, grow it.
@@ -79,20 +79,23 @@ void Queue<T>::push(const T & data) {
 
 
 template <typename T>
-void Queue<T>::pop() {
-    front_index_ = (front_index_ + 1) % capacity_;
+void Queue<T>::dequeue() {
+    if (size_) {
+        front_index_ = (front_index_ + 1) % capacity_;
+        --size_;
+    }
 }
 
 
 template <typename T>
 T Queue<T>::peek() const {
-    return (!empty()? queue_[front_index_] : T{});
+    return (empty()? T{} : queue_[front_index_]);
 }
 
 
 template <typename T>
 bool Queue<T>::empty() const {
-    return back_index_ == front_index_;
+    return size_ == 0;
 }
 
 
@@ -100,12 +103,12 @@ template <typename T>
 void Queue<T>::grow() {
     T* tmp = new T[capacity_ * 2];
     for (unsigned i = 0u; i < capacity_; ++i)
-        tmp[i] = queue_[(front_index_ + i + 1) % capacity_];
+        tmp[i] = queue_[(front_index_ + i) % capacity_];
     std::swap(tmp, queue_);
     delete[] tmp;
-    capacity_ *= 2;
     front_index_ = 0;
     back_index_ = capacity_ - 1;
+    capacity_ *= 2;
 }
 
 
