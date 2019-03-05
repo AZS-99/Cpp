@@ -9,7 +9,7 @@
 #ifndef Queue_h
 #define Queue_h
 
-const unsigned INITIAL_CAPACITY = 3;
+const unsigned INITIAL_CAPACITY = 5;
 
 template <typename T>
 class Queue {
@@ -17,12 +17,43 @@ class Queue {
     unsigned capacity_;
     unsigned front_index_;
     unsigned back_index_;
+    unsigned size_;
 public:
     Queue();
+    /**
+     Append a value of type T to the queue
+
+     @param T& The value needed to be appended to the queue passed by reference
+     */
     void push(const T&);
+    
+    
+    /**
+     Remove the first value from the queue
+     */
     void pop();
+    
+    
+    /**
+     Return a copy of the first value in the queue.
+
+     @return A copyt of the firstmost value in the queue.
+     */
     T peek() const;
+    
+    
+    /**
+     Return whether there are no elements in the queue
+
+     @return true if there are no elements in the queue, false otherwise.
+     */
     bool empty() const;
+    
+    
+    /**
+     Copy the queue to another array that is twice the size of the current one,
+     then delete the original array.
+     */
     void grow();
 };
 
@@ -31,14 +62,16 @@ template <typename T>
 Queue<T>::Queue() {
     queue_ = new T[INITIAL_CAPACITY];
     capacity_ = INITIAL_CAPACITY;
-    front_index_ = back_index_ = 0;
+    front_index_ = back_index_ = size_ = 0;
 }
 
 
 template <typename T>
 void Queue<T>::push(const T & data) {
     queue_[back_index_] = data;
-    if ((back_index_ + 1) % capacity_ == front_index_)
+     ++size_;
+    //If the array is full, grow it.
+    if (size_ == capacity_)
         grow();
     else
         back_index_ = ((back_index_ + 1) % capacity_);
