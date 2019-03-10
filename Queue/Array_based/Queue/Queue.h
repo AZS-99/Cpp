@@ -16,7 +16,7 @@ struct Queue {
     T* queue_;
     unsigned capacity_;
     unsigned front_index_;
-    unsigned back_index_;
+    unsigned back_index_;  //index of the next available spot, not the last element.
     unsigned size_;
 public:
     Queue();
@@ -70,7 +70,7 @@ template <typename T>
 void Queue<T>::enqueue(const T & data) {
     queue_[back_index_] = data;
      ++size_;
-    back_index_ = ((back_index_ + 1) % capacity_); 
+    back_index_ = ((back_index_ + 1) % capacity_);
     //If the array is full, grow it.
     if (size_ == capacity_)
         grow();

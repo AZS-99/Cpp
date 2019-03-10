@@ -7,7 +7,6 @@
 //
 
 #include <iostream>
-#include <QApplication>
 #include <Qlabel>
 
 int main(int argc, const char * argv[]) {
