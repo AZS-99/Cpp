@@ -14,7 +14,7 @@ struct Pair {
     T first;
     V second;
     Pair(); //Important for T{} initialisation, like a Node of Pairs
-    Pair(T&, V&);
+    Pair(const T&, const V&);
 };
 
 template <typename T, typename V>
@@ -25,14 +25,14 @@ Pair<T, V>::Pair() {
 
 
 template <typename T, typename V>
-Pair<T, V>::Pair(T& first, V& second) {
+Pair<T, V>::Pair(const T& first, const V& second) {
     this->first = first;
     this->second = second;
 }
 
 
 template <typename T, typename V>
-Pair<T, V> make_pair(T& first, V& value) {
+Pair<T, V> make_pair(const T& first, const V& value) {
     return Pair<T, V>(first, value);
 }
 
