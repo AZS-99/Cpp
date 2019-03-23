@@ -13,8 +13,15 @@ template <typename T, typename V>
 struct Pair {
     T first;
     V second;
+    Pair(); //Important for T{} initialisation, like a Node of Pairs
     Pair(T&, V&);
 };
+
+template <typename T, typename V>
+Pair<T, V>::Pair() {
+    first = T{};
+    second = V{};
+}
 
 
 template <typename T, typename V>
