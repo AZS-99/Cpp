@@ -19,18 +19,15 @@ void quick_sort(int* arr, int size) {
     int* left = arr;
     int* right = arr + size - 1;
     
-    while(left != pivot || right != pivot) {
-        while (*left < *pivot) ++left;
-        while (*right > *pivot) --right;
-        std::cout << "left: " << *left << ", right:" << *right << ", pivot: " << *pivot << std::endl;
+    do {
+        while (*left < *pivot && left != pivot) ++left;
+        while (*right > *pivot && right != pivot) --right;
         
-        std::swap(*left, *right);
-        ++left;
-        --right;
-        std::cout << "left: " << *left << ", right:" << *right << ", pivot: " << *pivot << std::endl;
-        std::cout << (left == pivot ? "left = pivot" : "left != pivot") << std::endl;
-        std::cout << "======================" << std::endl;
-    }
+        if (!(pivot == left || pivot == right))
+            std::swap(*left, *right);
+        else
+            break;
+    } while (++left && --right);
     
     
     quick_sort(arr, pivot_index);
@@ -39,15 +36,17 @@ void quick_sort(int* arr, int size) {
 
 
 int main(int argc, const char * argv[]) {
-    int simple_array[] = {2, 6, 1, 4, 8, 10, 9, 3, 5};
-    quick_sort(simple_array, sizeof(simple_array)/sizeof(int));
-    for (unsigned i = 0; i < sizeof(simple_array)/sizeof(int);++ i)
+    int simple_array[] = {2, 6, 11, 4, 8, 10, 9, 3, 5};
+    quick_sort(simple_array, 9);
+    for (unsigned i = 0; i < 9; ++i)
         std::cout << simple_array[i] << ", ";
-    std::cout << std::endl << "======================" << std::endl;
-    int arr[10000];
-    for(unsigned int i=0;i<10000;i++){
-        arr[i]=rand();
-    }
+//    for (unsigned i = 0; i < sizeof(simple_array)/sizeof(int);++ i)
+//        std::cout << simple_array[i] << ", ";
+//    std::cout << std::endl << "======================" << std::endl;
+//    int arr[10000];
+//    for(unsigned int i=0;i<10000;i++){
+//        arr[i]=rand();
+//    }
 //    quick_sort(arr, 10000);
 //    for(unsigned int i =0 ;i < 10000-1;i++){
 //        if(arr[i] > arr[i+1]){
