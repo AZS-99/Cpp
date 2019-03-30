@@ -5,7 +5,8 @@
 //  Created by Adam Saher on 19/03/2019.
 //  Copyright © 2019 Adam Saher. All rights reserved.
 
-//ADD TO YOUR CODE: perfectly balanced, compleste, heght balanced
+//ADD TO YOUR CODE: perfectly balanced (left and right differ by at most one)
+// compleste, height balanced(height differ by at most 1)
 
 #ifndef BST_h
 #define BST_h
@@ -22,14 +23,13 @@ public:
     BST();
     ~BST();
     bool exists(const T&);
-    std::ostream& display(std::ostream&) const;
     void iterative_insert(const T& value);
     void insert(const T& value);
-    void remove(const T&);
-    void remove (Node<T>*& node, const T&);
+    std::ostream& level_order(std::ostream&, const Node<T>*) const;
+    std::ostream& in_order(std::ostream&) const;
+    std::ostream& in_order(std::ostream&, const Node<T>*) const;
 private:
     void recursive_insert(Node<T>*& current, const T& value);
-    std::ostream& displayNode(std::ostream&, const Node<T>*) const;
     void destroy(Node<T>*&);
     template <typename U> friend std::ostream& operator<<(std::ostream& os, const BST<U>& bst);
 };
@@ -91,14 +91,7 @@ void BST<T>::recursive_insert(Node<T>*& current, const T& value) { //pass the po
 
 
 template <typename T>
-std::ostream& BST<T>::display(std::ostream& os) const {
-    displayNode(os, root_);
-    return os;
-}
-
-
-template <typename T>
-std::ostream& BST<T>::displayNode(std::ostream& os, const Node<T>* current) const {
+std::ostream& BST<T>::level_order(std::ostream& os, const Node<T>* current) const {
     if (!current)
         return os << "|";
     std::queue<Node<T>*> q;
@@ -117,28 +110,27 @@ std::ostream& BST<T>::displayNode(std::ostream& os, const Node<T>* current) cons
 
 
 template <typename T>
-void BST<T>::remove(const T& data) {
-    remove(root_, data);
+std::ostream& BST<T>::in_order(std::ostream &os) const {
+    in_order(os, root_);
+    return os;
 }
 
 
 template <typename T>
-void BST<T>::remove(Node<T>*& current, const T& data) {
-    if (!current) {
-        if (data == current->data_) {
-            
-        }
-        else if (data < current->data_)
-            remove(current->left_, data);
-        else
-            remove(current->right_, data);
-    }
+std::ostream& BST<T>::in_order(std::ostream &os, const Node<T> * node) const {
+    if (!node)
+        return os << '\0';
+    in_order(os, node->left_);
+    os <<  " " << node->data_ << " " ;
+    in_order(os, node->right_);
+    return os;
 }
+
 
 
 template <typename T>
 std::ostream& operator<<(std::ostream& os, const BST<T>& bst) {
-    bst.displayNode(os, bst.root_);
+    bst.level_order(os, bst.root_);
     return os;
 }
 

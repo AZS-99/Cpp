@@ -13,6 +13,12 @@ int main(int argc, const char * argv[]) {
     b.insert(10);
     b.insert(1);
     b.insert(20);
-    std::cout << b;
+    b.insert(30);
+    b.insert(2);
+    b.insert(4);
+    b.insert(25);
+    
+    b.in_order(std::cout);
+    
     return 0;
 }
