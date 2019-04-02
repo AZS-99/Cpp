@@ -51,14 +51,11 @@ namespace container {
         return os << "<" << pair.first << ", " << pair.second << ">";
     }
     
+    
     template <typename T, typename V>
     Pair<T, V> make_pair(const T& first, const V& value) {
         return Pair<T, V>(first, value);
     }
 }
-
-
-
-
 
 #endif /* Pair_h */

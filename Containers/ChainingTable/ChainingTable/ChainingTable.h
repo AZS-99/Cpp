@@ -23,8 +23,30 @@ public:
     ChainingTable& operator=(const ChainingTable&);
     ChainingTable& operator=(ChainingTable&&);
     ChainingTable(ChainingTable&& other);
+    
+    
+    
     bool update(const std::string& key, const T& value);
+    
+    
+    /**
+     Remove the key-value pair from the table
+
+     @param key : String that
+     @return true if the key-value could be removed successfully; false otherwise.
+     */
     bool remove(const std::string& key);
+    
+    
+    /**
+     Find the key-value pair that its key is equal to the one passed as an argument.
+     If found, get the value of this pair and pass it to the second argument.
+
+     @param key A string that is key of the pair
+     @param value any value of type T
+     @return true if the key-pair value could be found and the second argument's value has been
+                set successfully, false otherwise.
+     */
     bool find(const std::string& key,  T& value) ;
     std::ostream& display(std::ostream&) const;
 };
@@ -108,14 +130,6 @@ bool ChainingTable<T>::remove(const std::string& key) {
 
 
 template <typename T>
-std::ostream& ChainingTable<T>::display(std::ostream &os) const {
-    for (unsigned i = 0u; i < size_; ++i)
-        os << table_[i] << std::endl;
-    return os;
-}
-
-
-template <typename T>
 bool ChainingTable<T>::find(const std::string &key, T &value)  {
     unsigned index = hash_(key) % size_;
     auto it = table_[index].search(container::make_pair(key, value));
@@ -126,8 +140,12 @@ bool ChainingTable<T>::find(const std::string &key, T &value)  {
 }
 
 
-
-
+template <typename T>
+std::ostream& ChainingTable<T>::display(std::ostream &os) const {
+    for (unsigned i = 0u; i < size_; ++i)
+        os << table_[i] << std::endl;
+    return os;
+}
 
 
 #endif /* ChainingTable_h */
