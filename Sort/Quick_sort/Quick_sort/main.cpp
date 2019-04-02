@@ -11,8 +11,6 @@
 #include "Quick_sort.h"
 
 
-
-
 int main(int argc, const char * argv[]) {
     int simple_array[] = {2, 6, 11, 4, 1, 8, 10, 9, 3, 5};
     char char_arr[] = {'a', 't', 'b'};
@@ -28,12 +26,12 @@ int main(int argc, const char * argv[]) {
         std::cout << char_arr[i] << ", ";
     std::cout << std::endl << "======================" << std::endl;
     
-    int arr[10000];
-    for(unsigned int i=0;i<10000;i++){
+    int arr[100000];
+    for(unsigned int i=0;i<100000;i++){
         arr[i]=rand();
     }
-    quick_sort(arr, 10000);
-    for(unsigned int i =0 ;i < 10000-1;i++){
+    quick_sort(arr, 100000);
+    for(unsigned int i =0 ;i < 100000-1;i++){
         if(arr[i] > arr[i+1]){
             std::cout << "arr[" << i << "] = " << arr[i] << std::endl;
             std::cout << "arr[" << i+1 << "] = " << arr[i+1] << std::endl;
