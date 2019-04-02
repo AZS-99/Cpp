@@ -33,12 +33,13 @@ void quick_sort(int* arr, int size) {
     }
     
     //If all values on the left that are greater than *pivot have been swapped, but still there are unsorted values on right side
-    if (left == pivot && right != pivot) {
+    if (left == pivot && right > pivot) {
         //if right happens to be the pointer just next to pivot, it'll be swapped to the latter's left; != is not enough check
         while (right > pivot) {
             std::swap(*(pivot + 1), *right);
             std::swap(*pivot, *(pivot + 1));
             ++pivot;
+            ++pivot_index;
             while (right > pivot && *right > *pivot) --right;
         }
     }
@@ -48,6 +49,7 @@ void quick_sort(int* arr, int size) {
             std::swap(*(pivot - 1), *left);
             std::swap(*pivot, *(pivot - 1));
             --pivot;
+            --pivot_index;
             while (left != pivot && *left < *pivot) ++left;
         }
     }
@@ -63,18 +65,20 @@ int main(int argc, const char * argv[]) {
     std::cout<< "Sorted!" << std::endl;
     for (unsigned i = 0; i < sizeof(simple_array)/sizeof(int);++ i)
         std::cout << simple_array[i] << ", ";
-//    std::cout << std::endl << "======================" << std::endl;
-//    int arr[10000];
-//    for(unsigned int i=0;i<10000;i++){
-//        arr[i]=rand();
-//    }
-//    quick_sort(arr, 10000);
-//    for(unsigned int i =0 ;i < 10000-1;i++){
-//        if(arr[i] > arr[i+1]){
-//            std::cout << "arr[" << i << "] = " << arr[i] << std::endl;
-//            std::cout << "arr[" << i+1 << "] = " << arr[i+1] << std::endl;
-//            std::cout << "bug" << std::endl;
-//        }
-//    }
+    std::cout << std::endl << "======================" << std::endl;
+    int arr[10000];
+    for(unsigned int i=0;i<10000;i++){
+        arr[i]=rand();
+    }
+    quick_sort(arr, 10000);
+    for(unsigned int i =0 ;i < 10000-1;i++){
+        if(arr[i] > arr[i+1]){
+            std::cout << "arr[" << i << "] = " << arr[i] << std::endl;
+            std::cout << "arr[" << i+1 << "] = " << arr[i+1] << std::endl;
+            std::cout << "bug" << std::endl;
+        }
+        else
+            std::cout << "Correct!" << std::endl;
+    }
     return 0;
 }
