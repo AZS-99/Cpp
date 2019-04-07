@@ -7,3 +7,12 @@
 //
 
 #include "Node.hpp"
+
+template <typename T>
+Node<T>::Node(T data, Node* left, Node* right) {
+    data_ = data;
+    left_ = left;
+    right_ = right;
+}
+
+Node<int> node;

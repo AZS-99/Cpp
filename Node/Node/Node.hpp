@@ -11,4 +11,12 @@
 
 #include <stdio.h>
 
+template <typename T>
+class Node {
+    T data_;
+    Node* right_;
+    Node* left_;
+public:
+    Node(T data = T{}, Node* left = nullptr, Node* right = nullptr);
+};
 #endif /* Node_hpp */
