@@ -22,14 +22,12 @@ int main(int argc, const char * argv[]) {
         std::cout << simple_array[i] << ", ";
     std::cout << std::endl << "======================" << std::endl;
     
-    for (unsigned i = 0; i < sizeof(char_arr)/sizeof(int); ++i)
-        std::cout << char_arr[i] << ", ";
-    std::cout << std::endl << "======================" << std::endl;
     
     int arr[100000];
     for(unsigned int i=0;i<100000;i++){
         arr[i]=rand();
     }
+    
     quick_sort(arr, 100000);
     for(unsigned int i =0 ;i < 100000-1;i++){
         if(arr[i] > arr[i+1]){
