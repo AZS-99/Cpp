@@ -7,47 +7,29 @@
 //
 
 #include <iostream>
-
-bool is_even(unsigned num) {
-    return num % 2 == 0;
-}
-
-template <typename T>
-void heapify(T* arr, unsigned size) {
-    unsigned j;
-    bool bubbled;
-    for (unsigned i = size - 1; i > 0; --i) {
-        j = i;
-        bubbled = false;
-        while (j > 0 && !bubbled) {
-            //if right node
-            if (is_even(j)) {
-                if (arr[j] > arr[(j - 2) / 2]) {
-                    std::swap(arr[j], arr[(j - 2) / 2]);
-                    j = (j - 2) / 2;
-                }
-                else
-                    bubbled = true;
-            }
-            //if left node
-            else {
-                if (arr[j] > arr[(j - 1) / 2]) {
-                    std::swap(arr[j], arr[(j - 1) / 2]);
-                    j = (j - 1) / 2;
-                }
-                else
-                    bubbled = true;
-            }
-        }
-    }
-}
+#include "Heap_sort.h"
 
 int main(int argc, const char * argv[]) {
-    int arr[] = {3, 4, 7, 0, 5, 20, 30, 10, 2, 50, 40};
-    heapify(arr, sizeof(arr)/sizeof(arr[0]));
+    int arr[] = {3, 4, 7, 9, 6, 10, 11, 20, 1};
+    heap_sort(arr, sizeof(arr)/sizeof(arr[0]));
     
     for (unsigned i = 0; i < sizeof(arr)/sizeof(arr[0]); ++i)
         std::cout << arr[i] << " ";
     std::cout << std::endl;
+    
+    int arr2[100000];
+    for(unsigned int i=0;i<100000;i++){
+        arr2[i]=rand();
+    }
+    
+    heap_sort(arr2, 100000);
+    for(unsigned int i =0 ;i < 100000-1;i++){
+        if(arr2[i] > arr2[i+1]){
+            std::cout << "arr[" << i << "] = " << arr2[i] << std::endl;
+            std::cout << "arr[" << i+1 << "] = " << arr2[i+1] << std::endl;
+            std::cout << "bug" << std::endl;
+        }
+    }
+    
     return 0;
 }
