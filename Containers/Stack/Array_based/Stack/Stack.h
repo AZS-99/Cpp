@@ -8,11 +8,12 @@
 
 #ifndef Stack_h
 #define Stack_h
-const unsigned INITIAL_CAPACITY = 10;
+
 
 template <class T>
 class Stack {
     T* stack_;
+    static const unsigned INITIAL_CAPACITY;
     unsigned capacity_;
     unsigned size_;
     
@@ -26,6 +27,10 @@ public:
 private:
     void grow();
 };
+
+
+template <typename T>
+const unsigned Stack<T>::INITIAL_CAPACITY = 10;
 
 
 template <typename T>

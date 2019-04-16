@@ -9,11 +9,12 @@
 #ifndef Queue_h
 #define Queue_h
 
-const unsigned INITIAL_CAPACITY = 3;
+
 
 template <typename T>
 struct Queue {
     T* queue_;
+    static const unsigned INITIAL_CAPACITY;
     unsigned capacity_;
     unsigned front_index_;
     unsigned back_index_;  //index of the next available spot, not the last element.
@@ -59,6 +60,10 @@ public:
 
 
 template <typename T>
+const unsigned Queue<T>::INITIAL_CAPACITY = 3;
+
+
+template <typename T>
 Queue<T>::Queue() {
     queue_ = new T[INITIAL_CAPACITY];
     capacity_ = INITIAL_CAPACITY;
@@ -67,7 +72,7 @@ Queue<T>::Queue() {
 
 
 template <typename T>
-void Queue<T>::enqueue(const T & data) {
+void Queue<T>::enqueue(const T& data) {
     queue_[back_index_] = data;
      ++size_;
     back_index_ = ((back_index_ + 1) % capacity_);
@@ -101,7 +106,7 @@ bool Queue<T>::empty() const {
 template <typename T>
 void Queue<T>::grow() {
     T* tmp = new T[capacity_ * 2];
-    for (unsigned i = 0u; i < capacity_; ++i)
+    for (unsigned i = 0u; i < size_; ++i)
         tmp[i] = queue_[(front_index_ + i) % capacity_];
     std::swap(tmp, queue_);
     delete[] tmp;
