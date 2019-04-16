@@ -27,6 +27,9 @@ public:
     bool exists(const T&);
     void insert(const T&);
     void remove(const T&);
+    unsigned height() const;
+    unsigned count_nodes() const;
+    T* get_values_between(const T&, const T&);
     std::ostream& level_order(std::ostream&, const Node<T>*) const;
     std::ostream& in_order(std::ostream&) const;
     std::ostream& in_order(std::ostream&, const Node<T>*) const;
@@ -37,6 +40,9 @@ private:
     void insert(Node<T>*&, const T&);
     void remove(Node<T>*&);
     Node<T>*& get_node(Node<T>*&, const T&);
+    static unsigned height(const Node<T>*);
+    static unsigned count_nodes(const Node<T>*);
+    static void get_values_between(const Node<T>*, const T&, const T&, T*, unsigned&);
     template <typename U> friend std::ostream& operator<<(std::ostream& os, const BST<U>& bst);
 };
 
@@ -122,6 +128,61 @@ void BST<T>::remove(Node<T> *& node) {
         delete tmp;
     }
         
+}
+
+
+template <typename T>
+unsigned BST<T>::height() const {
+    return height(root_);
+}
+
+
+template <typename T>
+unsigned BST<T>::height(const Node<T>* node) {
+    if (!node)
+        return 0;
+    return std::max(height(node->left_), height(node->right_)) + 1;
+}
+
+
+template <typename T>
+unsigned BST<T>::count_nodes() const {
+    return count_nodes(root_);
+}
+
+
+template <typename T>
+unsigned BST<T>::count_nodes(const Node<T>* node) {
+    if (!node)
+        return 0;
+    return count_nodes(node->left_) + count_nodes(node->right_) + 1;
+}
+
+
+template <typename T>
+T* BST<T>::get_values_between(const T & value1, const T & value2) {
+    unsigned index = 0;
+    T* list_of_values = new T[count_nodes()]();
+    get_values_between(root_, value1, value2, list_of_values, index);
+    return list_of_values;
+}
+
+
+template <typename T>
+void BST<T>::get_values_between(const Node<T>* node, const T & value1, const T& value2, T* list_of_values, unsigned& index) {
+    if (!node)
+        return;
+    if (node->data_ < value1)
+        get_values_between(node->right_, value1, value2, list_of_values, index);
+    
+    else if (node->data_ > value2)
+        get_values_between(node->left_, value1, value2, list_of_values, index);
+    
+    else {
+        list_of_values[index++] = node->data_;
+        get_values_between(node->left_, value1, value2, list_of_values, index);
+        get_values_between(node->right_, value1, value2, list_of_values, index);
+    }
 }
 
 

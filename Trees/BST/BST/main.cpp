@@ -26,7 +26,12 @@ int main(int argc, const char * argv[]) {
     std::cout << b << std::endl;
     b.remove(10);
     std::cout << b << std::endl;
+    
 
+    auto tmp = b.get_values_between(10, 20);
+    
+    for (unsigned i = 0; i < b.count_nodes(); ++i)
+        std::cout << tmp[i] << " ";
     
     return 0;
 }
