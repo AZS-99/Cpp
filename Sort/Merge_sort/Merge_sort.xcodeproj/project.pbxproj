@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		B702F0AC2264FDA700720B71 /* Merge_sort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Merge_sort; sourceTree = BUILT_PRODUCTS_DIR; };
 		B702F0AF2264FDA700720B71 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B702F0B62264FDB700720B71 /* Merge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Merge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				B702F0AF2264FDA700720B71 /* main.cpp */,
+				B702F0B62264FDB700720B71 /* Merge.h */,
 			);
 			path = Merge_sort;
 			sourceTree = "<group>";

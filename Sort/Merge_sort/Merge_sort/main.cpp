@@ -7,9 +7,14 @@
 //
 
 #include <iostream>
+#include "Merge.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int array[] = {5, 3, 2, 1, 9, 10};
+    merge_sort(array, sizeof(array)/sizeof(array[0]));
+    
+    std::cout << "Array after merge sort: ";
+    for (unsigned i = 0; i < sizeof(array)/sizeof(array[0]); ++i)
+        std::cout << array[i] << " ";
     return 0;
 }
