@@ -12,23 +12,34 @@
 #include <iostream>
 
 class String {
-    char* string_;
-    size_t size_;
+    char* _string;
+    size_t _size;
     friend std::ostream& operator<<(std::ostream& os, const String& str);
-public:
+public: //The Rule of Five
     String();
     String(const char*);
     ~String();
     String(const String&);
     String(String&&);
-    String& operator=(const String&);
+    String& operator=(const String&); //The return is not void just for the c = (a = b)  case
     String& operator=(String&&);
+    char& operator[](unsigned) const; //const promises that no data member will be changed within the method
     bool empty() const;
-    char& operator[](unsigned) const;
     char& at(unsigned) const;
     char& back() const;
 };
 
+
+/*
+ Rule of 5
+ - A constructor is used whenever String() is called
+ - If it's used within a defintion, its value is assigned to the variable
+ - Empty constructor is used in case of declarations with no definition, or definitions with no args.
+ - Constructors are used only in declarations/definitons: auto str = String("Adam")
+ - Copy assignment is used only when the operator (=) is between two predefined instances: str1 = str2
+ 
+ 
+ */
 
 
 

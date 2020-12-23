@@ -25,7 +25,13 @@ public:
     ChainingTable(ChainingTable&& other);
     
     
-    
+    /**
+     Add a key-value pair to the table.
+
+     @param key A string
+     @param value type
+     @return true if the key-value pair could be added successfully; false otherwise
+     */
     bool update(const std::string& key, const T& value);
     
     

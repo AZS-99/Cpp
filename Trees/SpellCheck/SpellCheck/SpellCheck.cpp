@@ -13,9 +13,7 @@ const unsigned Node::NUM_OF_ENGLISH_LETTERS = 26;
 Node::Node(const char& letter, const bool& terminal) {
     letter_ = letter;
     terminal_ = terminal;
-    next_ = new Node*[NUM_OF_ENGLISH_LETTERS];
-    for (unsigned i = 0u; i < NUM_OF_ENGLISH_LETTERS; ++i)
-        next_[i] = nullptr;
+    next_ = new Node*[NUM_OF_ENGLISH_LETTERS]();
 }
 
 
@@ -67,20 +65,18 @@ unsigned SpellCheck::suggest(const std::string & str, std::string* suggestions) 
 
 
 void SpellCheck::suggest(const Node* node, const std::string& str, std::string* suggestions, unsigned& num_of_suggested_words) {
-        if (!node)
-            return;
+    if (!node)
+        return;
         
-        if (node->terminal_) {
-            suggestions[num_of_suggested_words] = str;
-            ++num_of_suggested_words;
-        }
-        
-        std::string str2;
+    if (node->terminal_)
+        suggestions[num_of_suggested_words++] = str;
+    
+    std::string str2;
     for (unsigned i = 0; i < Node::NUM_OF_ENGLISH_LETTERS; ++i) {
-            if (node->next_[i]) {
-                str2 = str + node->next_[i]->letter_;
-                SpellCheck::suggest(node->next_[i], str2, suggestions, num_of_suggested_words);
-            }
+        if (node->next_[i]) {
+            str2 = str + node->next_[i]->letter_;
+            SpellCheck::suggest(node->next_[i], str2, suggestions, num_of_suggested_words);
+        }
     }
 }
 

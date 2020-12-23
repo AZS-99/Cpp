@@ -64,9 +64,33 @@ public:
     
     
 private:
-    static unsigned count_terminals(const Node*);
-    static void suggest(const Node*, const std::string&, std::string*, unsigned&);
-    static void destroy(Node*);
+    /**
+     Count the number of nodes where terminal = true
+
+     @param node A subtree
+     @return an unsigned integer for the number of terminals.
+     */
+    static unsigned count_terminals(const Node* node);
+    
+    
+    /**
+     Fill the passed array with all the strings available in the trie that start with the
+     passed substring
+
+     @param node A subtree
+     @param substring A prefix or the first couple of letters of a word
+     @param suggestions An array to be filled with all words that start with the passed substring.
+     @param num_of_suggested_words The number of words that have been added to the suggestion array.
+     */
+    static void suggest(const Node* node, const std::string& substring, std::string* suggestions, unsigned& num_of_suggested_words);
+    
+    
+    /**
+     Delete the passed node and all its children.
+
+     @param node A subtree
+     */
+    static void destroy(Node* node);
 };
 
 #endif /* SpellCheck_hpp */
