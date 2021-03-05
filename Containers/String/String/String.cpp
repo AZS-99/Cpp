@@ -43,13 +43,17 @@ String::String(const String& src) {
 String& String::operator=(const String& src) {
     std::cout << "copy assignment operator" << std::endl;
     if (this != &src) {
-        delete[] _string;
-        _size = src._size;
-        if (src._string) {
-            _string = new char [_size + 1];
+        if (_size && _size == src._size)
             strcpy (_string, src._string);
-        } else
-            _string = nullptr;
+        else {
+            delete[] _string;
+            _size = src._size;
+            if (src._string) {
+                _string = new char [_size + 1];
+                strcpy (_string, src._string);
+            } else
+                _string = nullptr;
+        }
     }
     return *this;
 }

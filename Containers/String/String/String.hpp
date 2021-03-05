@@ -14,7 +14,7 @@
 class String {
     char* _string;
     size_t _size;
-    friend std::ostream& operator<<(std::ostream& os, const String& str);
+    friend std::ostream& operator<<(std::ostream&, const String&);
 public: //The Rule of Five
     String();
     String(const char*);

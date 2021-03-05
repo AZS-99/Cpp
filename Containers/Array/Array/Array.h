@@ -10,130 +10,163 @@
 #define array_hpp
 
 #include <iostream>
+#include <experimental/iterator>
 
-namespace Container {
-    template <typename T, size_t N>
-    class Array {
-        T array[N];
-        size_t length;
-    public:
-        Array();
-        Array(std::initializer_list<T>);
-        bool empty() const;
-        size_t size() const;
-        size_t max_size() const;
-        std::ostream& display(std::ostream& os) const;
-        //return type HAS to be reference; otherwise, you can't manipulate array values.
-        T& operator[](size_t i) {return array[i];};
-        T& back();
-        T& front();
-        T* begin(); //Methods that return pointers can't be const
-        T* end();
-        void fill(T value);
-        void push_back(T value);
-        void swap(Array&);
-    };
+
+template <typename T, unsigned N>
+class Array {
+    T _array[N]{};
+    unsigned _length;
     
+public:
+    //No pointers --> Doesn't need the 5 constructors.
+    Array ();
+    Array (std::initializer_list<T>);
+    Array (const Array&);
+    Array (Array&&);
+    Array& operator=(const Array&);
+    bool empty() const;
+    unsigned size() const;
+    unsigned max_size() const;
+    //return type HAS to be reference; otherwise, you can't manipulate array values.
+    T& operator[](size_t i) {return _array[i];};
+    T& back();
+    T& front();
+    T* begin(); //Methods that return pointers can't be const
+    T* end();
+    void fill(T value);
+    void push_back(T value);
+    void swap(Array&);
     
-    template <typename T, size_t N>
-    Array<T, N>::Array() {
-        length = 0u;
-    }
-    
-    
-    //you need template specialisation for Char*
-    template <typename T, size_t N>
-    Array<T, N>::Array(std::initializer_list<T> args) {
-        if (args.size() > N)
-            throw std::string("Error: number of elements passed is more than array's size");
-        length = 0u;
-        for (auto& element : args)
-            array[length++] = element;
-    }
-    
-    
-    template <typename T, size_t N>
-    bool Array<T, N>::empty() const {
-        return length == 0u;
-    }
-    
-    
-    template <typename T, size_t N>
-    size_t Array<T, N>::size() const {
-        return length;
-    }
-    
-    
-    template <typename T, size_t N>
-    size_t Array<T, N>::max_size() const {
-        return N;
-    }
-    
-    
-    template <typename T, size_t N>
-    std::ostream& Array<T, N>::display(std::ostream& os) const {
-        os << '[';
-        size_t i;
-        for (i = 0u; i < length - 1; ++i)
-            os << array[i] << ", ";
-        os << array[length - 1] << ']';
-        return os;
-    }
-    
-    
-    template <typename T, size_t N>
-    T& Array<T, N>::back() {
-        return array[length - 1];
-    }
-    
-    
-    template <typename T, size_t N>
-    T& Array<T, N>::front() {
-        return array[0];
-    }
-    
-    
-    template <typename T, size_t N>
-    T* Array<T, N>::begin() {
-        return array;
-    }
-    
-    
-    template <typename T, size_t N>
-    T* Array<T, N>::end() {
-        return array + length;
-    }
-    
-    
-    template <typename T, size_t N>
-    void Array<T, N>::fill(T value) {
-        for (size_t i = 0u; i < N; ++i)
-            array[i] = value;
-        length = N;
-    }
-    
-    
-    template <typename T, size_t N>
-    void Array<T, N>::push_back(T value) {
-        if (length == N)
-            throw std::string("Error: Array is full!");
-        array[length++] = value;
-    }
-    
-    
-    template <typename T, size_t N>
-    void Array<T, N>::swap(Array& other) {
-        
-        for (auto i = 0u; i < length; ++i)
-            std::swap(array[i], other.array[i]);
-    }
-    
-    
-    template <typename T, size_t N>
-    std::ostream& operator<<(std::ostream& os, Array<T, N> arr) {
-        arr.display(os);
-        return os;
+    template <typename U, unsigned M>
+    friend std::ostream& operator<<(std::ostream&, const Array<U, M>&);
+};
+
+
+template <typename T, unsigned N>
+Array<T, N>::Array() {
+    std::cout << "Empty Constructor" << std::endl;
+    _length = 0u;
+}
+
+
+//you need template specialisation for Char*
+template <typename T, unsigned N>
+Array<T, N>::Array(std::initializer_list<T> args) {
+    std::cout << "initaliser list constructor" << std::endl;
+    if (args.size() > N)
+        throw std::string("Error: number of elements passed is more than array's size");
+    _length = 0u; //since we have to iterate args anyway, no point of _length = args.size()
+    for (auto& element : args)
+        _array[_length++] = element;
+}
+
+
+template <typename T, unsigned N>
+Array<T, N>::Array(const Array<T, N>& src) {
+    std::cout << "Copy constructor" << std::endl;
+    if (std::size(src._array) <= std::size(this->_array)) {
+        std::copy(std::begin(src._array), std::end(src._array), std::begin(_array));
+        _length = src._length;
     }
 }
+
+
+template <typename T, unsigned N>
+Array<T, N>::Array(Array<T, N>&& src) {
+    std::cout << "Move Constructor" << std::endl;
+    std::swap (src._array, _array);
+    _length = src._length;
+    src._length = 0u;
+}
+
+
+template <typename T, unsigned N>
+Array<T, N>& Array<T, N>::operator=(const Array& src) {
+    std::cout << "Copy assignment" << std::endl;
+    std::copy(std::begin(src._array), std::end(src._array), std::begin(_array));
+    _length = src._length;
+    return *this;
+}
+
+
+
+template <typename T, unsigned N>
+bool Array<T, N>::empty() const {
+    return _length == 0u;
+}
+
+
+template <typename T, unsigned N>
+unsigned Array<T, N>::size() const {
+    return _length;
+}
+
+
+template <typename T, unsigned N>
+unsigned Array<T, N>::max_size() const {
+    return N;
+}
+
+
+template <typename T, unsigned N>
+T& Array<T, N>::back() {
+    return _array[_length - 1];
+}
+
+
+template <typename T, unsigned N>
+T& Array<T, N>::front() {
+    return _array[0];
+}
+
+
+template <typename T, unsigned N>
+T* Array<T, N>::begin() {
+    return _array;
+}
+
+
+template <typename T, unsigned N>
+T* Array<T, N>::end() {
+    return _array + _length;
+}
+
+
+template <typename T, unsigned N>
+void Array<T, N>::fill(T value) {
+    for (size_t i = 0u; i < N; ++i)
+        _array[i] = value;
+    _length = N;
+}
+
+
+template <typename T, unsigned N>
+void Array<T, N>::push_back(T value) {
+    if (_length == N)
+        throw std::string("Error: Array is full!");
+    _array[_length++] = value;
+}
+
+
+template <typename T, unsigned N>
+void Array<T, N>::swap(Array& other) {
+    for (auto i = 0u; i < _length; ++i)
+        std::swap(_array[i], other.array[i]);
+}
+
+    
+template <typename T, unsigned N>
+std::ostream& operator<<(std::ostream& os, const Array<T, N>& a) {
+    os << '[';
+    if (a._length > 0) {
+        for (auto i = 0u; i < a._length - 1; ++i)
+            os << a._array[i] << ", ";
+        os << a._array[a._length - 1];
+    }
+    return os << ']';
+}
+
+
 
 #endif /* array_hpp */
