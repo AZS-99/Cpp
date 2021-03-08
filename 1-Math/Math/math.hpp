@@ -13,6 +13,11 @@ namespace math {
 
 
 float approx(const double&, const unsigned& = 0);
+unsigned count_digits(const int&);
+unsigned factorial(const unsigned&);
+unsigned gcd(unsigned, unsigned);
+double sqrt(const double& num);
+
 
 template <typename T, typename = typename std::enable_if_t<std::is_arithmetic_v<T>, T>>
 auto max(const T& value1, const T& value2) {
@@ -27,7 +32,7 @@ T power(const T& base, const unsigned& exponent) {
 
 
 
-double sqrt(const double& num);
+
 
 
 
@@ -46,7 +51,7 @@ T abs(const T& num) {
 }
 
 
-unsigned count_digits(const int&);
+
 
 
 

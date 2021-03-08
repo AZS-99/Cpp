@@ -48,5 +48,17 @@ unsigned count_digits(const int& num) {
 }
 
 
+unsigned factorial(const unsigned& num) {
+    return num == 1? 1 : factorial(num - 1) * num;
+}
+
+
+unsigned gcd(unsigned num1, unsigned num2) {
+    if (num1 < num2)
+        std::swap(num1, num2);
+    return num1 % num2 == 0 ? num2 : gcd(num2, num1 % num2);
+}
+
+
 
 }

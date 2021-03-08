@@ -19,5 +19,7 @@ int main(int argc, const char * argv[]) {
     std::cout << math::sum(array, 3) << std::endl;
     std::cout << math::sqrt(876546888) << std::endl;
     std::cout << math::count_digits(-8900745) << std::endl;
+    std::cout << math::factorial(4) << std::endl;
+    std::cout << math::gcd(2, 3) << std::endl;
     return 0;
 }
