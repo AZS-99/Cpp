@@ -20,6 +20,12 @@ double sqrt(const double& num);
 
 
 template <typename T, typename = typename std::enable_if_t<std::is_arithmetic_v<T>, T>>
+T abs(const T& num) {
+    return num < 0?  0 - num : num;
+}
+
+
+template <typename T, typename = typename std::enable_if_t<std::is_arithmetic_v<T>, T>>
 auto max(const T& value1, const T& value2) {
     return value1 > value2? value1 : value2;
 }
@@ -32,10 +38,6 @@ T power(const T& base, const unsigned& exponent) {
 
 
 
-
-
-
-
 template <typename T, typename = typename std::enable_if_t<std::is_arithmetic_v<T>, T>>
 T sum(const T* array, const unsigned& size) {
     T total = T{};
@@ -43,16 +45,6 @@ T sum(const T* array, const unsigned& size) {
         total += array[i];
     return total;
 }
-
-
-template <typename T, typename = typename std::enable_if_t<std::is_arithmetic_v<T>, T>>
-T abs(const T& num) {
-    return num < 0?  0 - num : num;
-}
-
-
-
-
 
 
 }

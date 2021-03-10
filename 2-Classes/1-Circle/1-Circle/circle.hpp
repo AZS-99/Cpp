@@ -1,20 +1,17 @@
 //
-//  Circle.hpp
-//  1-Class
+//  circle.hpp
+//  1-Circle
 //
-//  Created by Adam Saher on 2021-03-04.
+//  Created by Adam Saher on 2021-03-08.
 //
 
 #ifndef circle_hpp
 #define circle_hpp
 
-#include <stdio.h>
-
 class Circle {
     float radius;
-    
 public:
-    Circle(float radius);
+    Circle(const float&);
     float get_area();
     float get_circumference();
 };

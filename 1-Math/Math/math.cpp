@@ -7,6 +7,23 @@
 
 #include "math.hpp"
 
+namespace {
+
+double sqrt_search (const double& num, double& min, double& max) {
+    double mid = (min + max)/2;
+    double sqr = mid * mid;
+    if (sqr < num + 1 && sqr > num - 1)
+        return mid;
+    else {
+        if (sqr > num)
+            return sqrt_search(num, min, mid);
+        else
+            return sqrt_search(num, mid, max);
+    }
+}
+
+}
+
 namespace math {
 
 float approx(const double& num, const unsigned& precision) {
@@ -22,23 +39,26 @@ float approx(const double& num, const unsigned& precision) {
 
 
 double sqrt(const double& num) {
-    if (num != 1) {
-        double max = num > 1? num : 1;
-        double min = num > 1? 1 : num;
-        double mid = (max + min)/2;
-        float margin = 0.001;
-        
-        while(!(mid * mid < num + margin && mid * mid > num - margin)) {
-            if (mid * mid > num)
-                max = mid;
-            else
-                min = mid;
-            mid = (max + min) / 2;
-        }
-        return mid;
-    }
-    else
-        return 1.0;
+    double min = 1;
+    double max = num;
+    return sqrt_search(num, min, max);
+//    if (num != 1) {
+//        double max = num > 1? num : 1;
+//        double min = num > 1? 1 : num;
+//        double mid = (max + min)/2;
+//        float margin = 0.001;
+//
+//        while(!(mid * mid < num + margin && mid * mid > num - margin)) {
+//            if (mid * mid > num)
+//                max = mid;
+//            else
+//                min = mid;
+//            mid = (max + min) / 2;
+//        }
+//        return mid;
+//    }
+//    else
+//        return 1.0;
     
 }
 
