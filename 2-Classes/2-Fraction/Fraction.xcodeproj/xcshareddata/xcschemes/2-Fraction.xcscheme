@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "66D6DF5F25F704F70034FFB5"
-               BuildableName = "2-Fraction"
-               BlueprintName = "2-Fraction"
-               ReferencedContainer = "container:2-Fraction.xcodeproj">
+               BuildableName = "Fraction"
+               BlueprintName = "Fraction"
+               ReferencedContainer = "container:Fraction.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "66D6DF5F25F704F70034FFB5"
-            BuildableName = "2-Fraction"
-            BlueprintName = "2-Fraction"
-            ReferencedContainer = "container:2-Fraction.xcodeproj">
+            BuildableName = "Fraction"
+            BlueprintName = "Fraction"
+            ReferencedContainer = "container:Fraction.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "66D6DF5F25F704F70034FFB5"
-            BuildableName = "2-Fraction"
-            BlueprintName = "2-Fraction"
-            ReferencedContainer = "container:2-Fraction.xcodeproj">
+            BuildableName = "Fraction"
+            BlueprintName = "Fraction"
+            ReferencedContainer = "container:Fraction.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

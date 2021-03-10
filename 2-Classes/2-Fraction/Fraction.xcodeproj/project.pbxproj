@@ -24,7 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		66D6DF6025F704F70034FFB5 /* 2-Fraction */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "2-Fraction"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66D6DF6025F704F70034FFB5 /* Fraction */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Fraction; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D6DF6325F704F70034FFB5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		66D6DF6B25F705150034FFB5 /* fraction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fraction.cpp; sourceTree = "<group>"; };
 		66D6DF6C25F705150034FFB5 /* fraction.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fraction.hpp; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		66D6DF5725F704F70034FFB5 = {
 			isa = PBXGroup;
 			children = (
-				66D6DF6225F704F70034FFB5 /* 2-Fraction */,
+				66D6DF6225F704F70034FFB5 /* Fraction */,
 				66D6DF6125F704F70034FFB5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,27 +52,27 @@
 		66D6DF6125F704F70034FFB5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66D6DF6025F704F70034FFB5 /* 2-Fraction */,
+				66D6DF6025F704F70034FFB5 /* Fraction */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		66D6DF6225F704F70034FFB5 /* 2-Fraction */ = {
+		66D6DF6225F704F70034FFB5 /* Fraction */ = {
 			isa = PBXGroup;
 			children = (
 				66D6DF6325F704F70034FFB5 /* main.cpp */,
 				66D6DF6B25F705150034FFB5 /* fraction.cpp */,
 				66D6DF6C25F705150034FFB5 /* fraction.hpp */,
 			);
-			path = "2-Fraction";
+			path = Fraction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		66D6DF5F25F704F70034FFB5 /* 2-Fraction */ = {
+		66D6DF5F25F704F70034FFB5 /* Fraction */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66D6DF6725F704F70034FFB5 /* Build configuration list for PBXNativeTarget "2-Fraction" */;
+			buildConfigurationList = 66D6DF6725F704F70034FFB5 /* Build configuration list for PBXNativeTarget "Fraction" */;
 			buildPhases = (
 				66D6DF5C25F704F70034FFB5 /* Sources */,
 				66D6DF5D25F704F70034FFB5 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = "2-Fraction";
+			name = Fraction;
 			productName = "2-Fraction";
-			productReference = 66D6DF6025F704F70034FFB5 /* 2-Fraction */;
+			productReference = 66D6DF6025F704F70034FFB5 /* Fraction */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 66D6DF5B25F704F70034FFB5 /* Build configuration list for PBXProject "2-Fraction" */;
+			buildConfigurationList = 66D6DF5B25F704F70034FFB5 /* Build configuration list for PBXProject "Fraction" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66D6DF5F25F704F70034FFB5 /* 2-Fraction */,
+				66D6DF5F25F704F70034FFB5 /* Fraction */,
 			);
 		};
 /* End PBXProject section */
@@ -261,7 +261,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		66D6DF5B25F704F70034FFB5 /* Build configuration list for PBXProject "2-Fraction" */ = {
+		66D6DF5B25F704F70034FFB5 /* Build configuration list for PBXProject "Fraction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66D6DF6525F704F70034FFB5 /* Debug */,
@@ -270,7 +270,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66D6DF6725F704F70034FFB5 /* Build configuration list for PBXNativeTarget "2-Fraction" */ = {
+		66D6DF6725F704F70034FFB5 /* Build configuration list for PBXNativeTarget "Fraction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66D6DF6825F704F70034FFB5 /* Debug */,
