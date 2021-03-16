@@ -17,6 +17,7 @@ struct Pair {
     Pair(const T&, const V&);
 };
 
+
 template <typename T, typename V>
 Pair<T, V>::Pair() {
     first = T{};

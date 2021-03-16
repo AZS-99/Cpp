@@ -17,6 +17,8 @@ public:
     Fraction(const int&, const int&);
     bool operator==(const Fraction&) const; //The trailing 'const' means the method can't modify the instance *this
     bool operator!=(const Fraction&) const;
+    bool operator<(const Fraction&) const;
+    bool operator>(const Fraction&) const;
     Fraction operator+(const Fraction&) const;
     Fraction operator-(const Fraction&) const;
     Fraction operator*(const Fraction&) const;

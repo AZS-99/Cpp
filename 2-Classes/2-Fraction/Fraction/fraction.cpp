@@ -30,6 +30,18 @@ bool Fraction::operator!=(const Fraction& other) const {
 }
 
 
+bool Fraction::operator<(const Fraction& other) const {
+    auto tmp = *this - other;
+    return !tmp.is_positive;
+}
+
+
+bool Fraction::operator>(const Fraction& other) const {
+    auto tmp = *this - other;
+    return tmp.is_positive;
+}
+
+
 Fraction Fraction::operator+(const Fraction& other) const {
     int new_denom = std::lcm(denominator, other.denominator);
     int num =  (new_denom/denominator) * numerator * (is_positive? 1 : -1) + (new_denom/other.denominator) * other.numerator * (other.is_positive? 1 : -1);

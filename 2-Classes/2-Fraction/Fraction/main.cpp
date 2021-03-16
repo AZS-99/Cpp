@@ -9,11 +9,12 @@
 #include "fraction.hpp"
 
 int main(int argc, const char * argv[]) {
-    auto fraction1 = Fraction(18, 12);
-    auto fraction2 = Fraction(17, 9);
-    fraction1 -= fraction2;
+    auto f1 = Fraction(1, 2);
+    auto f2 = Fraction(2, 3);
+    std::cout << (f1 < f2) << std::endl;
+    f1 -= f2;
     
-    std::cout << fraction1 << std::endl;
+    std::cout << f1 << std::endl;
     
     
     return 0;
