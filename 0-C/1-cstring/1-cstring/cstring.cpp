@@ -13,13 +13,13 @@ namespace cstring {
     }
 
     //remember that pointers are copied when passed as arguments.
-    //const pointer doesn't mean it's value can't be changed, but it's dereferenced value can't be.
-    char* strcpy(char*& destination, const char* src) {
-        delete[] destination;
-        unsigned len = strlen(src);
-        destination = new char[len];
-        for (unsigned i = 0u; i < len; ++i)
-            destination[i] = src[i];
-        return destination;
+    //const pointer means it can't change the values of what it points to, but the pointer itself can move.
+    char* dynstrcpy(char*& destination, const char* src) {
+        delete[] destination; //PROBLEM IF DANGLING (REVIEW) 
+        destination = new char[strlen(src)];
+        auto tmp = destination;
+        while(*src)
+            *destination++ = *src++;
+        return destination = tmp;
     }
 }

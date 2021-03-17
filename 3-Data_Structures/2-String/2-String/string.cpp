@@ -5,21 +5,31 @@
 //  Created by Adam Saher on 2021-03-16.
 //
 
-#include <cstring>
+
 #include "string.hpp"
+#include "helpers.hpp"
 
 
 String::String() {
-    string = nullptr;
+    char_array = nullptr;
 }
 
 
 String::String(const char* chars) {
-    string = new char[std::strlen(chars + 1)];
-    std::strcpy(string, chars);
+    helpers::dyn_strcpy(char_array, chars);
 }
 
 
-std::ostream& String::print(std::ostream& os) const {
-    return os << string;
+String::~String() {
+    delete[] char_array;
+}
+
+
+String::String(const String& other) {
+    helpers::dyn_strcpy(char_array, other.char_array);
+}
+
+
+std::ostream& operator<<(std::ostream& os, const String& string) {
+    return os << string.char_array;
 }

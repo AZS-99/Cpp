@@ -10,7 +10,7 @@
 #include "cstring.hpp"
 
 int main(int argc, const char * argv[]) {
-    char* chars;
+    char* chars = nullptr;
     auto str = cstring::strcpy(chars, "hey");
     std::cout << str << '\t' << chars << std::endl;
     return 0;

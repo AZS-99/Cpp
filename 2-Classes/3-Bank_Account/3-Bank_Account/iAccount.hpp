@@ -1,6 +1,6 @@
 /*
- An interface is a special case of an abstract class. It's an abstract class that  contains only pure virtual methods (= 0)
- which are the only methods  we want the user to have access to.
+ An interface is PURE abstract class; a special case of abstract classes containing only pure virtual methods (= 0)
+ which are the only methods we want the user to have access to.
  An interface doesn't contain any member variables (the user doesn't need to know about them; they only need the methods)
  and is the only thing that we are going to include int the main.cpp, so the user can't access even the abstract class
  below it, and hence, can't see the member variables.

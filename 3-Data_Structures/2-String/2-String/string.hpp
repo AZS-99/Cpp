@@ -1,6 +1,4 @@
 //
-//  string.hpp
-//  2-String
 //
 //  Created by Adam Saher on 2021-03-16.
 //
@@ -12,11 +10,13 @@
 #include <iostream>
 
 class String {
-    char* string;
+    char* char_array;
 public:
     String();
     String(const char*);
-    std::ostream& print(std::ostream&) const;
+    ~String();
+    String(const String&);
+    friend std::ostream& operator<<(std::ostream&, const String&);
 };
 
 #endif /* string_hpp */

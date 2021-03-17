@@ -6,10 +6,11 @@
 //
 
 #include <iostream>
-#include "iString.hpp"
+#include "string.hpp"
 
 int main(int argc, const char * argv[]) {
     auto str = String("hi");
-    str.print(std::cout);
+    auto str2 = String(str);
+    std::cout << str << std::endl;
     return 0;
 }
