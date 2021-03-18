@@ -10,6 +10,7 @@
 
 namespace helpers {
 unsigned strlen(const char*);
+char* strcpy (char* destination, const char* src);
 char* dyn_strcpy(char*& destenation, const char* src);
 }
 

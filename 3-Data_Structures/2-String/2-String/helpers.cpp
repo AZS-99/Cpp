@@ -13,6 +13,14 @@ namespace helpers {
     }
 
 
+    char* strcpy (char* destination, const char* src) {
+        auto tmp = destination;
+        while (*src)
+            *destination++ = *src++;
+        return destination = tmp;
+    }
+
+
     char* dyn_strcpy (char*& destination, const char* src) {
         delete[] destination; //PROBLEM IF DANGLING, WHICH IS MOSTLY THE CASE (REVIEW) 
         destination = new char[strlen(src)];

@@ -21,7 +21,7 @@ public: //The Rule of Five
     ~String();
     String(const String&);
     String(String&&);
-    String& operator=(const String&); //The return is not void just for the c = (a = b)  case
+    String& operator=(const String&); //The return is not void just for chaining:  a = b = c  
     String& operator=(String&&);
     char& operator[](unsigned) const; //const promises that no data member will be changed within the method
     bool empty() const;
