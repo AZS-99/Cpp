@@ -57,7 +57,9 @@ String& String::operator=(String&& other) {
 }
 
 
-
+char& String::operator[](const unsigned& index) const {
+    return char_array[index];
+}
 
 
 std::ostream& operator<<(std::ostream& os, const String& string) {

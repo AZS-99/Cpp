@@ -19,6 +19,7 @@ public:
     String(String&&);
     String& operator=(const String&);  //The return is not void, to allow for chaining:  a = b = c
     String& operator=(String&&);        //When an already initiated instance is equated to a regular constructor
+    char& operator[](const unsigned&) const;
     friend std::ostream& operator<<(std::ostream&, const String&);
 };
 
