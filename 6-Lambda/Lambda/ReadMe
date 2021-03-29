@@ -1,0 +1,25 @@
+Accumulate fn:
+
+template <class InputIt, class T, class BinaryOperation>
+constexpr T accumulate (InputIt first, InputIt last, T init, BinaryOperation op) {
+    for (; first != last; ++first) {
+        init = op(std::move(init), *first);
+    }
+    return init;
+}
+
+The binary fn (usually lambda) takes 2 arguments, the first is the piggybank, and the second is
+an element of the container (dereference of iterator).
+
+
+
+Transform fn:
+
+template <class InputIt, class OutputIt, class UnaryOperation>
+OutputIt transform(InputIt original_vec_begin, InputIt original_vec_end, OutputIt copy_vector,UnaryOperation unary_op)
+{
+    while (original_vec_begin != original_vec_last) {
+        *copy_vect++ = unary_op(*first1++);
+    }
+    return d_first;
+}
