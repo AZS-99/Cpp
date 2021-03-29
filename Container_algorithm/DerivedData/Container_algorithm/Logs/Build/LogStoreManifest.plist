@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>010FD952-2228-45C5-B10B-55B9447BDB5C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>010FD952-2228-45C5-B10B-55B9447BDB5C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Container_algorithm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Container_algorithm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Container_algorithm</string>
+			<key>timeStartedRecording</key>
+			<real>638663509.50771594</real>
+			<key>timeStoppedRecording</key>
+			<real>638663510.283445</real>
+			<key>title</key>
+			<string>Build Container_algorithm</string>
+			<key>uniqueIdentifier</key>
+			<string>010FD952-2228-45C5-B10B-55B9447BDB5C</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

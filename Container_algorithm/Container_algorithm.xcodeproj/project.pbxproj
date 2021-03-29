@@ -7,22 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660EA559261136D1002EDD6A /* Simple.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 660EA558261136D1002EDD6A /* Simple.txt */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B779E0962235B69100BD8279 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B779E0952235B69100BD8279 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B779E0902235B69100BD8279 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 12;
+			dstPath = "";
 			dstSubfolderSpec = 0;
 			files = (
+				660EA559261136D1002EDD6A /* Simple.txt in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		660EA558261136D1002EDD6A /* Simple.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Simple.txt; sourceTree = "<group>"; };
 		B779E0922235B69100BD8279 /* Container_algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Container_algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		B779E0952235B69100BD8279 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B779E09C2235B6D200BD8279 /* DataTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTable.h; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		B779E0892235B69100BD8279 = {
 			isa = PBXGroup;
 			children = (
+				660EA558261136D1002EDD6A /* Simple.txt */,
 				B779E0942235B69100BD8279 /* Container_algorithm */,
 				B779E0932235B69100BD8279 /* Products */,
 			);
