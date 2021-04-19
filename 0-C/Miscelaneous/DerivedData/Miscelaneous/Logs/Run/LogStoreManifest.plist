@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>225A2BE3-F701-4CF3-BE69-7C0173937050</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>225A2BE3-F701-4CF3-BE69-7C0173937050.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640484801.03574705</real>
+			<key>timeStoppedRecording</key>
+			<real>640484802.24282503</real>
+			<key>title</key>
+			<string>Run Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>225A2BE3-F701-4CF3-BE69-7C0173937050</string>
+		</dict>
+		<key>4057CBCF-EAA6-450A-870E-1F3145F19CC6</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>4057CBCF-EAA6-450A-870E-1F3145F19CC6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640484857.15172994</real>
+			<key>timeStoppedRecording</key>
+			<real>640484858.37125194</real>
+			<key>title</key>
+			<string>Run Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>4057CBCF-EAA6-450A-870E-1F3145F19CC6</string>
+		</dict>
+		<key>52BC1104-B5F3-4886-8A0D-9FD7443D2400</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>52BC1104-B5F3-4886-8A0D-9FD7443D2400.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640483004.23276103</real>
+			<key>timeStoppedRecording</key>
+			<real>640483013.79372001</real>
+			<key>title</key>
+			<string>Run Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>52BC1104-B5F3-4886-8A0D-9FD7443D2400</string>
+		</dict>
+		<key>5AC84170-A2DB-474B-8191-352C03A18276</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>5AC84170-A2DB-474B-8191-352C03A18276.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640484883.235044</real>
+			<key>timeStoppedRecording</key>
+			<real>640484884.44777405</real>
+			<key>title</key>
+			<string>Run Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>5AC84170-A2DB-474B-8191-352C03A18276</string>
+		</dict>
+		<key>74AEAB74-C9A4-4777-89BF-61DE84DE3291</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>74AEAB74-C9A4-4777-89BF-61DE84DE3291.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640488077.63388598</real>
+			<key>timeStoppedRecording</key>
+			<real>640488078.82613897</real>
+			<key>title</key>
+			<string>Run Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>74AEAB74-C9A4-4777-89BF-61DE84DE3291</string>
+		</dict>
+		<key>77458C46-DE3E-4867-9687-136279721964</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>77458C46-DE3E-4867-9687-136279721964.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640393002.96903598</real>
+			<key>timeStoppedRecording</key>
+			<real>640393004.22477305</real>
+			<key>title</key>
+			<string>Run Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>77458C46-DE3E-4867-9687-136279721964</string>
+		</dict>
+		<key>7B2FD843-18EF-436B-8EF0-6386B8A6D8A5</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7B2FD843-18EF-436B-8EF0-6386B8A6D8A5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640488132.06079602</real>
+			<key>timeStoppedRecording</key>
+			<real>640488133.25909901</real>
+			<key>title</key>
+			<string>Run Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>7B2FD843-18EF-436B-8EF0-6386B8A6D8A5</string>
+		</dict>
+		<key>E2D9AE3E-C587-49BE-9B78-24E448AECA9F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E2D9AE3E-C587-49BE-9B78-24E448AECA9F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640488067.85086501</real>
+			<key>timeStoppedRecording</key>
+			<real>640488069.04586005</real>
+			<key>title</key>
+			<string>Run Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>E2D9AE3E-C587-49BE-9B78-24E448AECA9F</string>
+		</dict>
+		<key>EFA19341-DB63-4FD7-9BCE-E2803F0BA888</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>EFA19341-DB63-4FD7-9BCE-E2803F0BA888.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640484937.37785995</real>
+			<key>timeStoppedRecording</key>
+			<real>640484938.65682602</real>
+			<key>title</key>
+			<string>Run Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>EFA19341-DB63-4FD7-9BCE-E2803F0BA888</string>
+		</dict>
+		<key>F2E5EDB6-ADC2-406D-A1DD-D42503D94E28</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>F2E5EDB6-ADC2-406D-A1DD-D42503D94E28.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640484816.13051999</real>
+			<key>timeStoppedRecording</key>
+			<real>640484817.33503997</real>
+			<key>title</key>
+			<string>Run Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>F2E5EDB6-ADC2-406D-A1DD-D42503D94E28</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

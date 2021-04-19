@@ -39,8 +39,9 @@ public:
     void push_back(const T&);
     void pop_back(const T&);
     void shrink_to_fit();
-    friend std::ostream& operator<<(std::ostream&, const Vector&);
-    std::ostream& print(std::ostream&) const;
+    
+    template <typename U>
+    friend std::ostream& operator<<(std::ostream&, const Vector<U>&);
 };
 
 
@@ -203,13 +204,7 @@ void Vector<T>::shrink_to_fit() {
 }
 
 
-template <typename T>
-std::ostream& Vector<T>::print(std::ostream& os) const {
-    os << '[';
-    for (auto i = 0u; i < size_ - 1; ++i)
-        os << data_[i] << ", ";
-    return os << data_[size_ - 1] << ']';
-}
+
 
 
 template <typename T>

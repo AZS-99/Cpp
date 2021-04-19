@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>4A8291E3-4F78-4517-BA9F-DC963929354C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4A8291E3-4F78-4517-BA9F-DC963929354C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Vector project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Vector</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Vector</string>
+			<key>timeStartedRecording</key>
+			<real>639258059.61358905</real>
+			<key>timeStoppedRecording</key>
+			<real>639258060.031201</real>
+			<key>title</key>
+			<string>Build Vector</string>
+			<key>uniqueIdentifier</key>
+			<string>4A8291E3-4F78-4517-BA9F-DC963929354C</string>
+		</dict>
+		<key>7B40F8B4-53DE-43BE-BC6D-85671B23A9FD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7B40F8B4-53DE-43BE-BC6D-85671B23A9FD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Vector project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Vector</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Vector</string>
+			<key>timeStartedRecording</key>
+			<real>639258016.94685495</real>
+			<key>timeStoppedRecording</key>
+			<real>639258017.56549001</real>
+			<key>title</key>
+			<string>Build Vector</string>
+			<key>uniqueIdentifier</key>
+			<string>7B40F8B4-53DE-43BE-BC6D-85671B23A9FD</string>
+		</dict>
+		<key>A61D07CB-A557-48DA-A98E-9237149CAA1D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A61D07CB-A557-48DA-A98E-9237149CAA1D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Vector project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Vector</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Vector</string>
+			<key>timeStartedRecording</key>
+			<real>639258056.00198901</real>
+			<key>timeStoppedRecording</key>
+			<real>639258056.44353497</real>
+			<key>title</key>
+			<string>Build Vector</string>
+			<key>uniqueIdentifier</key>
+			<string>A61D07CB-A557-48DA-A98E-9237149CAA1D</string>
+		</dict>
+		<key>D7303010-FF6A-4E3C-B251-3AB5282F9D95</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D7303010-FF6A-4E3C-B251-3AB5282F9D95.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Vector project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Vector</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Vector</string>
+			<key>timeStartedRecording</key>
+			<real>639258482.70809603</real>
+			<key>timeStoppedRecording</key>
+			<real>639258483.28870201</real>
+			<key>title</key>
+			<string>Build Vector</string>
+			<key>uniqueIdentifier</key>
+			<string>D7303010-FF6A-4E3C-B251-3AB5282F9D95</string>
+		</dict>
+		<key>F623AD95-A2FB-4AD9-84D9-0284992C0129</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F623AD95-A2FB-4AD9-84D9-0284992C0129.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Vector project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Vector</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Vector</string>
+			<key>timeStartedRecording</key>
+			<real>639258094.81322503</real>
+			<key>timeStoppedRecording</key>
+			<real>639258095.39709604</real>
+			<key>title</key>
+			<string>Build Vector</string>
+			<key>uniqueIdentifier</key>
+			<string>F623AD95-A2FB-4AD9-84D9-0284992C0129</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

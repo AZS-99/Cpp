@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>30667D1C-93DF-419B-BE95-49E859CA2391</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>30667D1C-93DF-419B-BE95-49E859CA2391.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Shape project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Shape</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Shape</string>
+			<key>timeStartedRecording</key>
+			<real>639120236.39529705</real>
+			<key>timeStoppedRecording</key>
+			<real>639120237.68732405</real>
+			<key>title</key>
+			<string>Run Shape</string>
+			<key>uniqueIdentifier</key>
+			<string>30667D1C-93DF-419B-BE95-49E859CA2391</string>
+		</dict>
+		<key>4E52D4D6-E7C3-428B-8F36-195801DB828E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>4E52D4D6-E7C3-428B-8F36-195801DB828E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Shape project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Shape</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Shape</string>
+			<key>timeStartedRecording</key>
+			<real>639185880.10181701</real>
+			<key>timeStoppedRecording</key>
+			<real>639185891.87169898</real>
+			<key>title</key>
+			<string>Run Shape</string>
+			<key>uniqueIdentifier</key>
+			<string>4E52D4D6-E7C3-428B-8F36-195801DB828E</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

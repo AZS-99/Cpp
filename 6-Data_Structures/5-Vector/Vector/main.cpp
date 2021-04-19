@@ -19,7 +19,7 @@ int main(int argc, const char * argv[]) {
     std::cout << "capacity: " << vec2.capacity() << std::endl;
     
     vec2.shrink_to_fit();
-    vec2.print(std::cout);
+    std::cout << vec2 << std::endl;
     std::cout << "New Capacity: " << vec2.capacity() << std::endl;
     
     auto std_vec = std::vector<int>(10);

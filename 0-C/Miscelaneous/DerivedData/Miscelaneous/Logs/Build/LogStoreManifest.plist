@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>1F92E0DB-FFAA-4743-ACFC-3D58ADC2FDAA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1F92E0DB-FFAA-4743-ACFC-3D58ADC2FDAA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640488131.32825196</real>
+			<key>timeStoppedRecording</key>
+			<real>640488132.05905402</real>
+			<key>title</key>
+			<string>Build Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>1F92E0DB-FFAA-4743-ACFC-3D58ADC2FDAA</string>
+		</dict>
+		<key>4466D49E-48BF-4C2B-A9E0-F7E0BBE130C4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4466D49E-48BF-4C2B-A9E0-F7E0BBE130C4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640488067.06895995</real>
+			<key>timeStoppedRecording</key>
+			<real>640488067.84899604</real>
+			<key>title</key>
+			<string>Build Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>4466D49E-48BF-4C2B-A9E0-F7E0BBE130C4</string>
+		</dict>
+		<key>5264A6EA-401E-46A2-8F9D-8190446749C7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5264A6EA-401E-46A2-8F9D-8190446749C7.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640484936.61966097</real>
+			<key>timeStoppedRecording</key>
+			<real>640484937.37597299</real>
+			<key>title</key>
+			<string>Build Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>5264A6EA-401E-46A2-8F9D-8190446749C7</string>
+		</dict>
+		<key>5689FFCE-1457-4466-90E9-570BD01930FE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5689FFCE-1457-4466-90E9-570BD01930FE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640484856.39523494</real>
+			<key>timeStoppedRecording</key>
+			<real>640484857.149822</real>
+			<key>title</key>
+			<string>Build Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>5689FFCE-1457-4466-90E9-570BD01930FE</string>
+		</dict>
+		<key>5EF48DAA-3D89-4E91-8F60-DE1521FBDD9B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5EF48DAA-3D89-4E91-8F60-DE1521FBDD9B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640484800.24522901</real>
+			<key>timeStoppedRecording</key>
+			<real>640484801.03334701</real>
+			<key>title</key>
+			<string>Build Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>5EF48DAA-3D89-4E91-8F60-DE1521FBDD9B</string>
+		</dict>
+		<key>64082C1D-F90E-421D-A3C6-1F2836926268</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>64082C1D-F90E-421D-A3C6-1F2836926268.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640484816.10384095</real>
+			<key>timeStoppedRecording</key>
+			<real>640484816.12829006</real>
+			<key>title</key>
+			<string>Build Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>64082C1D-F90E-421D-A3C6-1F2836926268</string>
+		</dict>
+		<key>681BC752-6A77-424C-8E79-E5FEC28BD651</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>681BC752-6A77-424C-8E79-E5FEC28BD651.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640483001.98853099</real>
+			<key>timeStoppedRecording</key>
+			<real>640483004.22581196</real>
+			<key>title</key>
+			<string>Build Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>681BC752-6A77-424C-8E79-E5FEC28BD651</string>
+		</dict>
+		<key>69330C27-D769-4C35-A597-23CFEC2F237A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>69330C27-D769-4C35-A597-23CFEC2F237A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640393002.17562103</real>
+			<key>timeStoppedRecording</key>
+			<real>640393002.966663</real>
+			<key>title</key>
+			<string>Build Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>69330C27-D769-4C35-A597-23CFEC2F237A</string>
+		</dict>
+		<key>6DA86909-DDB8-4F46-9E5C-AB999762B0BC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6DA86909-DDB8-4F46-9E5C-AB999762B0BC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640488076.82925105</real>
+			<key>timeStoppedRecording</key>
+			<real>640488077.632092</real>
+			<key>title</key>
+			<string>Build Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>6DA86909-DDB8-4F46-9E5C-AB999762B0BC</string>
+		</dict>
+		<key>7B366C67-C677-496C-9227-36C4B5637788</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7B366C67-C677-496C-9227-36C4B5637788.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640484882.49154305</real>
+			<key>timeStoppedRecording</key>
+			<real>640484883.23222303</real>
+			<key>title</key>
+			<string>Build Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>7B366C67-C677-496C-9227-36C4B5637788</string>
+		</dict>
+		<key>95E7A5E0-6068-4549-989D-2F545382CB76</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>95E7A5E0-6068-4549-989D-2F545382CB76.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Miscelaneous project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Miscelaneous</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Miscelaneous</string>
+			<key>timeStartedRecording</key>
+			<real>640483322.86244404</real>
+			<key>timeStoppedRecording</key>
+			<real>640483323.35106301</real>
+			<key>title</key>
+			<string>Build Miscelaneous</string>
+			<key>uniqueIdentifier</key>
+			<string>95E7A5E0-6068-4549-989D-2F545382CB76</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
