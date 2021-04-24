@@ -120,6 +120,7 @@ std::ostream& BST<T>::print(std::ostream& os) const {
 }
 
 
+//In-Order
 template <typename T>
 std::vector<T> BST<T>::sort() const {
     auto sorted = std::vector<T>();
