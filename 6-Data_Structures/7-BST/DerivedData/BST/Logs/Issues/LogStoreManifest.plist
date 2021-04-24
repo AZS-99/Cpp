@@ -6,34 +6,6 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>35D64A16-5F06-4F8C-8AC4-CD54180C35E4</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
-			<key>fileName</key>
-			<string>35D64A16-5F06-4F8C-8AC4-CD54180C35E4.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>signature</key>
-			<string>BST-ctbvfoimigtwylexolapivlmkood</string>
-			<key>timeStartedRecording</key>
-			<real>640237938.12204301</real>
-			<key>timeStoppedRecording</key>
-			<real>640237938.66009605</real>
-			<key>title</key>
-			<string>Build target BST</string>
-			<key>uniqueIdentifier</key>
-			<string>35D64A16-5F06-4F8C-8AC4-CD54180C35E4</string>
-		</dict>
 		<key>59BD8378-2404-4CA1-A8C0-BA08E4BC43FA</key>
 		<dict>
 			<key>className</key>
@@ -61,6 +33,34 @@
 			<string>Build target BST</string>
 			<key>uniqueIdentifier</key>
 			<string>59BD8378-2404-4CA1-A8C0-BA08E4BC43FA</string>
+		</dict>
+		<key>B1EC8119-096A-46C1-B37D-EF90F64432DC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
+			<key>fileName</key>
+			<string>B1EC8119-096A-46C1-B37D-EF90F64432DC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>BST-ctbvfoimigtwylexolapivlmkood</string>
+			<key>timeStartedRecording</key>
+			<real>640993671.21999097</real>
+			<key>timeStoppedRecording</key>
+			<real>640993671.91361594</real>
+			<key>title</key>
+			<string>Build target BST</string>
+			<key>uniqueIdentifier</key>
+			<string>B1EC8119-096A-46C1-B37D-EF90F64432DC</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

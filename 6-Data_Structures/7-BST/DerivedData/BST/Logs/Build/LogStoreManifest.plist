@@ -6,6 +6,142 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>818423A6-0043-47E2-B303-78C2C0153D35</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>818423A6-0043-47E2-B303-78C2C0153D35.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BST project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BST</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build BST</string>
+			<key>timeStartedRecording</key>
+			<real>640990848.27743101</real>
+			<key>timeStoppedRecording</key>
+			<real>640990850.32721305</real>
+			<key>title</key>
+			<string>Build BST</string>
+			<key>uniqueIdentifier</key>
+			<string>818423A6-0043-47E2-B303-78C2C0153D35</string>
+		</dict>
+		<key>85FB0A28-F010-4914-B54F-4FB6738EDFD3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>85FB0A28-F010-4914-B54F-4FB6738EDFD3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BST project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BST</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build BST</string>
+			<key>timeStartedRecording</key>
+			<real>640993671.18341398</real>
+			<key>timeStoppedRecording</key>
+			<real>640993671.92052901</real>
+			<key>title</key>
+			<string>Build BST</string>
+			<key>uniqueIdentifier</key>
+			<string>85FB0A28-F010-4914-B54F-4FB6738EDFD3</string>
+		</dict>
+		<key>8C8F8A85-27BD-4F1A-902E-6456DFFDAFE6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8C8F8A85-27BD-4F1A-902E-6456DFFDAFE6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BST project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BST</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build BST</string>
+			<key>timeStartedRecording</key>
+			<real>640990850.61545002</real>
+			<key>timeStoppedRecording</key>
+			<real>640990851.18250096</real>
+			<key>title</key>
+			<string>Build BST</string>
+			<key>uniqueIdentifier</key>
+			<string>8C8F8A85-27BD-4F1A-902E-6456DFFDAFE6</string>
+		</dict>
+		<key>9A5A108C-7C60-4D0E-9AA7-CCD310AB036E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9A5A108C-7C60-4D0E-9AA7-CCD310AB036E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BST project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BST</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build BST</string>
+			<key>timeStartedRecording</key>
+			<real>640990937.60887897</real>
+			<key>timeStoppedRecording</key>
+			<real>640990938.51075602</real>
+			<key>title</key>
+			<string>Build BST</string>
+			<key>uniqueIdentifier</key>
+			<string>9A5A108C-7C60-4D0E-9AA7-CCD310AB036E</string>
+		</dict>
 		<key>FB2BB6AB-7511-4C26-86A4-F521C2896373</key>
 		<dict>
 			<key>className</key>

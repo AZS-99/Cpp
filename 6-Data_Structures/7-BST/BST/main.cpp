@@ -27,5 +27,9 @@ int main(int argc, const char * argv[]) {
     bst.remove(12);
     std::cout << bst << std::endl;
     std::cout << "height: " << bst.height() << std::endl;
+    
+    auto vec = bst.sort();
+    for (auto& value : vec)
+        std::cout << value << std::endl;
     return 0;
 }

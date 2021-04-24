@@ -11,6 +11,7 @@
 #include <cmath>
 #include <set>
 #include <typeinfo>
+#include <list>
 
 // O(n)
 unsigned count_digits(const unsigned& num) {
@@ -82,38 +83,32 @@ std::string convert_to_roman(const int& num) {
 }
 
 
-
-//find possible combinations of string for a dialled number
-std::vector<std::string> string_combinations(const std::string num_str) {
-    const std::map<char, std::set<char>> dictionary = {
-        {'2', {'a', 'b', 'c'}},
-        {'3', {'d', 'e', 'f'}},
-        {'4', {'g', 'h', 'i'}},
-        {'5', {'j', 'k', 'l'}},
-        {'6', {'m', 'n', 'o'}},
-        {'7', {'p', 'q', 'r', 's'}},
-        {'8', {'t', 'u', 'v'}},
-        {'9', {'w', 'x', 'y', 'z'}}
-    };
-
-    std::vector<std::string> result, tmp;
-    std::string s;
-    result.push_back("");
-    std::set<char> set;
-    for (auto& digit : num_str) {
-        set = dictionary.find(digit)->second;
-        
-    }
-
-    return result;
+std::vector<int> min_coin_num(std::vector<int>& coins, int amount) {
+    std::sort(coins.begin(), coins.end(), std::greater<int>());
+    std::vector<int> denom_count(coins.size(), 0);
+    auto count = 0u;
+    
+    std::transform(coins.cbegin(), coins.cend(), denom_count.begin(), [&amount, &count] (const int& coin) {
+        auto res = amount / coin;
+        count += res;
+        amount %= coin;
+        return res;
+    });
+    if (amount == 0)
+        return denom_count;
+    else
+        return {};
+    
 }
 
 
+
+
 int main(int argc, const char * argv[]) {
-    
-    auto vec = string_combinations("23");
-    for (auto& string : vec)
-        std::cout << string << std::endl;
+    std::vector<int> coins = {50, 20};
+    auto vec = min_coin_num(coins, 160);
+    for (auto& num : vec)
+        std::cout << "amount of coin: " << num << std::endl;
 
     return 0;
 }

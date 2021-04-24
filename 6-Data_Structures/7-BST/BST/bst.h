@@ -9,6 +9,8 @@
 #define bst_h
 
 #include <list>
+#include <stack>
+#include <vector>
 #include "node.h"
 
 
@@ -19,11 +21,11 @@ template <typename T>
 class BST {
     BSTnode<T>* root;
     unsigned size_;
-    std::tuple<BSTnode<T>*, BSTnode<T>*> find(const T&) const;
-    std::ostream& print(std::ostream&) const;
-    unsigned grandchild_ordinal(BSTnode<T>*) const;
+    
 public:
     BST(BSTnode<T>* = nullptr);
+    std::vector<T> sort() const;
+    unsigned count() const;
     unsigned height() const;
     unsigned size() const;
     void insert(const T&);
@@ -31,13 +33,23 @@ public:
     
     template <typename U>
     friend std::ostream& operator<<(std::ostream&, const BST<U>&);
+private:
+    std::tuple<BSTnode<T>*, BSTnode<T>*> find(const T&) const;
+    std::ostream& print(std::ostream&) const;
+    unsigned grandchild_ordinal(BSTnode<T>*) const;
 };
 
+
+template <typename T>
+unsigned BST<T>::height() const {
+    return root->furthest_grandchild_ordinal();
+}
 
 template <typename T>
 unsigned BST<T>::size() const {
     return size_;
 }
+
 
 
 template <typename T>
@@ -109,9 +121,26 @@ std::ostream& BST<T>::print(std::ostream& os) const {
 
 
 template <typename T>
-unsigned BST<T>::height() const {
-    return root->furthest_grandchild_ordinal();
+std::vector<T> BST<T>::sort() const {
+    auto sorted = std::vector<T>();
+    std::stack<BSTnode<T>*> node_stack;
+    
+    auto current = root;
+    while (current) {
+        node_stack.push(current);
+        current = current->left;
+    }
+    
+    while (!node_stack.empty()) {
+        current = node_stack.top();
+        sorted.push_back(current->value);
+        node_stack.pop();
+        if (current->right)
+            node_stack.push(current->right);
+    }
+    return sorted;
 }
+
 
 
 template <typename T>

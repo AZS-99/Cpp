@@ -6,6 +6,40 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>228DAFE9-70C2-408F-AC0D-F064881241BB</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>228DAFE9-70C2-408F-AC0D-F064881241BB.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BST project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BST</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BST</string>
+			<key>timeStartedRecording</key>
+			<real>640990938.51667404</real>
+			<key>timeStoppedRecording</key>
+			<real>640990948.10204995</real>
+			<key>title</key>
+			<string>Run BST</string>
+			<key>uniqueIdentifier</key>
+			<string>228DAFE9-70C2-408F-AC0D-F064881241BB</string>
+		</dict>
 		<key>941B1D9B-80D2-429B-80DF-3E578ED854A6</key>
 		<dict>
 			<key>className</key>
@@ -39,6 +73,40 @@
 			<string>Run BST</string>
 			<key>uniqueIdentifier</key>
 			<string>941B1D9B-80D2-429B-80DF-3E578ED854A6</string>
+		</dict>
+		<key>C7289DCF-4F39-417B-8BAE-306862C08DFC</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>C7289DCF-4F39-417B-8BAE-306862C08DFC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BST project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BST</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BST</string>
+			<key>timeStartedRecording</key>
+			<real>640993671.92292202</real>
+			<key>timeStoppedRecording</key>
+			<real>640993673.15242505</real>
+			<key>title</key>
+			<string>Run BST</string>
+			<key>uniqueIdentifier</key>
+			<string>C7289DCF-4F39-417B-8BAE-306862C08DFC</string>
 		</dict>
 	</dict>
 </dict>
