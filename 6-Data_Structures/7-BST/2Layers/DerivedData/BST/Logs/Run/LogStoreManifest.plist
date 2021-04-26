@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>00C2D519-26E5-417C-8DD6-5986BADB6C19</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>00C2D519-26E5-417C-8DD6-5986BADB6C19.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BST project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BST</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BST</string>
+			<key>timeStartedRecording</key>
+			<real>641135014.09919906</real>
+			<key>timeStoppedRecording</key>
+			<real>641135015.32752502</real>
+			<key>title</key>
+			<string>Run BST</string>
+			<key>uniqueIdentifier</key>
+			<string>00C2D519-26E5-417C-8DD6-5986BADB6C19</string>
+		</dict>
+		<key>0F885241-712F-4121-B139-F994F1A6FA93</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>0F885241-712F-4121-B139-F994F1A6FA93.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BST project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BST</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BST</string>
+			<key>timeStartedRecording</key>
+			<real>641135102.21959198</real>
+			<key>timeStoppedRecording</key>
+			<real>641135103.41483998</real>
+			<key>title</key>
+			<string>Run BST</string>
+			<key>uniqueIdentifier</key>
+			<string>0F885241-712F-4121-B139-F994F1A6FA93</string>
+		</dict>
+		<key>C7289DCF-4F39-417B-8BAE-306862C08DFC</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>C7289DCF-4F39-417B-8BAE-306862C08DFC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BST project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BST</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BST</string>
+			<key>timeStartedRecording</key>
+			<real>640993671.92292202</real>
+			<key>timeStoppedRecording</key>
+			<real>640993673.15242505</real>
+			<key>title</key>
+			<string>Run BST</string>
+			<key>uniqueIdentifier</key>
+			<string>C7289DCF-4F39-417B-8BAE-306862C08DFC</string>
+		</dict>
+		<key>DCB1D370-4969-49A5-848E-4CDA67C88992</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>DCB1D370-4969-49A5-848E-4CDA67C88992.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BST project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BST</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BST</string>
+			<key>timeStartedRecording</key>
+			<real>641134060.33542001</real>
+			<key>timeStoppedRecording</key>
+			<real>641134069.45647204</real>
+			<key>title</key>
+			<string>Run BST</string>
+			<key>uniqueIdentifier</key>
+			<string>DCB1D370-4969-49A5-848E-4CDA67C88992</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
