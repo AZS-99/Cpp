@@ -25,5 +25,8 @@ int main(int argc, const char * argv[]) {
     double x;
     
     std::cout << "value of x: " << x << std::endl;
+    
+    std::cout << math::summation(10) << std::endl;
+    std::cout << math::sum_digits(234) << std::endl;
     return 0;
 }

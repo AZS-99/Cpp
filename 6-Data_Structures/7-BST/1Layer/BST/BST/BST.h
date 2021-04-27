@@ -19,16 +19,17 @@ class Node {
 public:
     Node(const T& = T{}, Node<T>* = nullptr, Node<T>* = nullptr);
     bool insert(const T&);
-    bool remove(const T&);
     unsigned depth() const;
     unsigned height() const;
     unsigned size() const;
+    void remove(const T&);
     std::ostream& print(std::ostream&) const;
     
     template <typename U>
     friend std::ostream& operator<<(std::ostream&, const Node<U>&);
 private:
     std::ostream& print_level(std::ostream& os, const unsigned&) const;
+    std::tuple<Node<T>*, Node<T>*> find(const T&); // can't be a const fn because it returns 'this' pointer
 };
 
 
@@ -98,4 +99,24 @@ template <typename T>
 std::ostream& operator<<(std::ostream& os, const Node<T>& node) {
     return node.print(os);
 }
+
+
+
+template <typename T>
+std::tuple<Node<T>*, Node<T>*> Node<T>::find(const T& val)  {
+    if (!this) //value doesn't exist
+        return std::tuple<Node<T>*, Node<T>*> (nullptr, nullptr);
+    else if (val == value) //value is the root
+        return std::tuple<Node<T>*, Node<T>*>(nullptr, this);
+    else if (val  == left->value)
+        return std::make_tuple(this, left);
+    else if (val == right->value)
+        return std::make_tuple(this, right);
+    else if (val < value)
+        return left->find(val);
+    else
+        return right->find(val);
+}
+
+    
 #endif /* BST_h */

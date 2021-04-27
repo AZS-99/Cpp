@@ -6,6 +6,40 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>0AB817BF-9F9D-493E-A347-F894070F2C41</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>0AB817BF-9F9D-493E-A347-F894070F2C41.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BST project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BST</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BST</string>
+			<key>timeStartedRecording</key>
+			<real>641231459.83997095</real>
+			<key>timeStoppedRecording</key>
+			<real>641231461.055372</real>
+			<key>title</key>
+			<string>Run BST</string>
+			<key>uniqueIdentifier</key>
+			<string>0AB817BF-9F9D-493E-A347-F894070F2C41</string>
+		</dict>
 		<key>169DC253-914B-4D6D-9DA7-8057BC812E53</key>
 		<dict>
 			<key>className</key>
@@ -40,7 +74,7 @@
 			<key>uniqueIdentifier</key>
 			<string>169DC253-914B-4D6D-9DA7-8057BC812E53</string>
 		</dict>
-		<key>18100CFC-7A0D-4603-91EA-0057FD6362F0</key>
+		<key>1A560115-52F1-400F-8F24-E204B8BCD817</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -49,7 +83,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>18100CFC-7A0D-4603-91EA-0057FD6362F0.xcactivitylog</string>
+			<string>1A560115-52F1-400F-8F24-E204B8BCD817.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,15 +100,15 @@
 			<key>signature</key>
 			<string>Run BST</string>
 			<key>timeStartedRecording</key>
-			<real>641139080.77574396</real>
+			<real>641230842.28217697</real>
 			<key>timeStoppedRecording</key>
-			<real>641139081.98746502</real>
+			<real>641230843.52510405</real>
 			<key>title</key>
 			<string>Run BST</string>
 			<key>uniqueIdentifier</key>
-			<string>18100CFC-7A0D-4603-91EA-0057FD6362F0</string>
+			<string>1A560115-52F1-400F-8F24-E204B8BCD817</string>
 		</dict>
-		<key>590C32F4-D975-4606-830B-E621A42DA188</key>
+		<key>22333028-CA07-433E-A6F4-C49C806CD5A7</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -83,7 +117,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>590C32F4-D975-4606-830B-E621A42DA188.xcactivitylog</string>
+			<string>22333028-CA07-433E-A6F4-C49C806CD5A7.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -100,15 +134,15 @@
 			<key>signature</key>
 			<string>Run BST</string>
 			<key>timeStartedRecording</key>
-			<real>641136393.97643697</real>
+			<real>641231523.93298399</real>
 			<key>timeStoppedRecording</key>
-			<real>641136398.74650705</real>
+			<real>641231525.16466701</real>
 			<key>title</key>
 			<string>Run BST</string>
 			<key>uniqueIdentifier</key>
-			<string>590C32F4-D975-4606-830B-E621A42DA188</string>
+			<string>22333028-CA07-433E-A6F4-C49C806CD5A7</string>
 		</dict>
-		<key>6461C133-AC37-4374-B26F-A5F8303F3F9D</key>
+		<key>244F6A57-E800-40BA-86D5-5172106D13E4</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -117,7 +151,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>6461C133-AC37-4374-B26F-A5F8303F3F9D.xcactivitylog</string>
+			<string>244F6A57-E800-40BA-86D5-5172106D13E4.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -134,15 +168,15 @@
 			<key>signature</key>
 			<string>Run BST</string>
 			<key>timeStartedRecording</key>
-			<real>641139490.57559204</real>
+			<real>641231476.25232005</real>
 			<key>timeStoppedRecording</key>
-			<real>641139491.69696999</real>
+			<real>641231477.46932399</real>
 			<key>title</key>
 			<string>Run BST</string>
 			<key>uniqueIdentifier</key>
-			<string>6461C133-AC37-4374-B26F-A5F8303F3F9D</string>
+			<string>244F6A57-E800-40BA-86D5-5172106D13E4</string>
 		</dict>
-		<key>6D01F5C0-324E-4F59-95E6-D465167E8A36</key>
+		<key>610F0CFE-589E-46AE-BD19-828CB4CE6CD2</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -151,7 +185,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>6D01F5C0-324E-4F59-95E6-D465167E8A36.xcactivitylog</string>
+			<string>610F0CFE-589E-46AE-BD19-828CB4CE6CD2.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -168,15 +202,15 @@
 			<key>signature</key>
 			<string>Run BST</string>
 			<key>timeStartedRecording</key>
-			<real>641140143.27626705</real>
+			<real>641229638.641096</real>
 			<key>timeStoppedRecording</key>
-			<real>641140144.42597401</real>
+			<real>641229639.86376595</real>
 			<key>title</key>
 			<string>Run BST</string>
 			<key>uniqueIdentifier</key>
-			<string>6D01F5C0-324E-4F59-95E6-D465167E8A36</string>
+			<string>610F0CFE-589E-46AE-BD19-828CB4CE6CD2</string>
 		</dict>
-		<key>8AC2B310-6C12-4530-8000-AAB1A103A540</key>
+		<key>6CF5F963-ED28-4F9F-8CF1-B38D9472E19F</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -185,7 +219,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>8AC2B310-6C12-4530-8000-AAB1A103A540.xcactivitylog</string>
+			<string>6CF5F963-ED28-4F9F-8CF1-B38D9472E19F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -202,15 +236,15 @@
 			<key>signature</key>
 			<string>Run BST</string>
 			<key>timeStartedRecording</key>
-			<real>641139609.29034805</real>
+			<real>641229609.027053</real>
 			<key>timeStoppedRecording</key>
-			<real>641139672.25657201</real>
+			<real>641229618.22361696</real>
 			<key>title</key>
 			<string>Run BST</string>
 			<key>uniqueIdentifier</key>
-			<string>8AC2B310-6C12-4530-8000-AAB1A103A540</string>
+			<string>6CF5F963-ED28-4F9F-8CF1-B38D9472E19F</string>
 		</dict>
-		<key>9073DC12-5597-478E-ABB4-4903E31C2F6C</key>
+		<key>8B3CB16B-EC79-4B39-B182-340B1C59B2DB</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -219,7 +253,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>9073DC12-5597-478E-ABB4-4903E31C2F6C.xcactivitylog</string>
+			<string>8B3CB16B-EC79-4B39-B182-340B1C59B2DB.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -236,15 +270,15 @@
 			<key>signature</key>
 			<string>Run BST</string>
 			<key>timeStartedRecording</key>
-			<real>641139700.23353899</real>
+			<real>641231468.03481102</real>
 			<key>timeStoppedRecording</key>
-			<real>641139701.45506704</real>
+			<real>641231469.29653001</real>
 			<key>title</key>
 			<string>Run BST</string>
 			<key>uniqueIdentifier</key>
-			<string>9073DC12-5597-478E-ABB4-4903E31C2F6C</string>
+			<string>8B3CB16B-EC79-4B39-B182-340B1C59B2DB</string>
 		</dict>
-		<key>ABC72F34-13EE-4431-85C1-3A8BE8B50F46</key>
+		<key>97C3CA27-3051-436D-BE81-5E6E21D913D4</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -253,7 +287,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>ABC72F34-13EE-4431-85C1-3A8BE8B50F46.xcactivitylog</string>
+			<string>97C3CA27-3051-436D-BE81-5E6E21D913D4.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -270,15 +304,15 @@
 			<key>signature</key>
 			<string>Run BST</string>
 			<key>timeStartedRecording</key>
-			<real>641139538.935274</real>
+			<real>641231362.207515</real>
 			<key>timeStoppedRecording</key>
-			<real>641139540.13031602</real>
+			<real>641231363.42398906</real>
 			<key>title</key>
 			<string>Run BST</string>
 			<key>uniqueIdentifier</key>
-			<string>ABC72F34-13EE-4431-85C1-3A8BE8B50F46</string>
+			<string>97C3CA27-3051-436D-BE81-5E6E21D913D4</string>
 		</dict>
-		<key>E0F3476A-B148-45D5-9EE5-3F4AD1805FD1</key>
+		<key>C3634707-F200-49A4-816B-708FB3E661B8</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -287,7 +321,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>E0F3476A-B148-45D5-9EE5-3F4AD1805FD1.xcactivitylog</string>
+			<string>C3634707-F200-49A4-816B-708FB3E661B8.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -304,13 +338,81 @@
 			<key>signature</key>
 			<string>Run BST</string>
 			<key>timeStartedRecording</key>
-			<real>641139672.81808805</real>
+			<real>641230891.97056496</real>
 			<key>timeStoppedRecording</key>
-			<real>641139674.01290202</real>
+			<real>641230893.12984395</real>
 			<key>title</key>
 			<string>Run BST</string>
 			<key>uniqueIdentifier</key>
-			<string>E0F3476A-B148-45D5-9EE5-3F4AD1805FD1</string>
+			<string>C3634707-F200-49A4-816B-708FB3E661B8</string>
+		</dict>
+		<key>C9283153-2714-40E7-9E35-B1F7A76D5CD5</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>C9283153-2714-40E7-9E35-B1F7A76D5CD5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BST project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BST</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BST</string>
+			<key>timeStartedRecording</key>
+			<real>641230863.48715401</real>
+			<key>timeStoppedRecording</key>
+			<real>641230864.67555904</real>
+			<key>title</key>
+			<string>Run BST</string>
+			<key>uniqueIdentifier</key>
+			<string>C9283153-2714-40E7-9E35-B1F7A76D5CD5</string>
+		</dict>
+		<key>E7430C69-EB84-4D65-BAA4-FB79E680ACAF</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E7430C69-EB84-4D65-BAA4-FB79E680ACAF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BST project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BST</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BST</string>
+			<key>timeStartedRecording</key>
+			<real>641231433.45128798</real>
+			<key>timeStoppedRecording</key>
+			<real>641231434.65057695</real>
+			<key>title</key>
+			<string>Run BST</string>
+			<key>uniqueIdentifier</key>
+			<string>E7430C69-EB84-4D65-BAA4-FB79E680ACAF</string>
 		</dict>
 	</dict>
 </dict>

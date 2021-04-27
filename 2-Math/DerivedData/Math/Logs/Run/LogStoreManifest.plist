@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>A41258FD-96D0-402D-8EF5-F40BEE6813A3</key>
+		<key>78BF28A1-4799-4ADB-875C-C53EB1A843FF</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>A41258FD-96D0-402D-8EF5-F40BEE6813A3.xcactivitylog</string>
+			<string>78BF28A1-4799-4ADB-875C-C53EB1A843FF.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,13 +32,47 @@
 			<key>signature</key>
 			<string>Run Math</string>
 			<key>timeStartedRecording</key>
-			<real>638834420.76567602</real>
+			<real>641249011.00971794</real>
 			<key>timeStoppedRecording</key>
-			<real>638834430.04806101</real>
+			<real>641249016.53345096</real>
 			<key>title</key>
 			<string>Run Math</string>
 			<key>uniqueIdentifier</key>
-			<string>A41258FD-96D0-402D-8EF5-F40BEE6813A3</string>
+			<string>78BF28A1-4799-4ADB-875C-C53EB1A843FF</string>
+		</dict>
+		<key>D598315D-F8E0-46E0-9A9D-6AE08B906D4D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D598315D-F8E0-46E0-9A9D-6AE08B906D4D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Math project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Math</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Math</string>
+			<key>timeStartedRecording</key>
+			<real>641249757.53591299</real>
+			<key>timeStoppedRecording</key>
+			<real>641249758.71767795</real>
+			<key>title</key>
+			<string>Run Math</string>
+			<key>uniqueIdentifier</key>
+			<string>D598315D-F8E0-46E0-9A9D-6AE08B906D4D</string>
 		</dict>
 		<key>ECAD0BF8-54F3-412A-BF04-E6BE1D4389D8</key>
 		<dict>

@@ -9,11 +9,18 @@
 #include "BST.h"
 
 int main(int argc, const char * argv[]) {
-    auto node = Node<int>(0);
-    node.insert(10);
-    node.insert(-10);
-    node.insert(9);
+    auto node = Node<int>(10);
+    
+    node.insert(7);
+    node.insert(15);
+    node.insert(8);
+    node.insert(1);
+    node.insert(2);
+    node.insert(12);
+    node.insert(16);
+    node.insert(14);
     node.insert(11);
-    std::cout << node << std::endl;
+    auto [parent, current] = node.find(15);
+    std::cout << *current << std::endl;
     return 0;
 }
