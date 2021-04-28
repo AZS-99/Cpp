@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6A6B334DB2BF8B683ADBC020B573F05F97B6D17A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6A6B334DB2BF8B683ADBC020B573F05F97B6D17A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9A8C6D92-7984-471E-8285-93490300D26F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6A6B334DB2BF8B683ADBC020B573F05F97B6D17A" : "Cpp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "School",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "5-Classes\/School\/School.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AZS-99\/Cpp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6A6B334DB2BF8B683ADBC020B573F05F97B6D17A"
+    }
+  ]
+}
