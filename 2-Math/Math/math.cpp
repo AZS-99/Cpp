@@ -6,6 +6,7 @@
 //
 
 #include "math.hpp"
+#include <cmath>
 
 namespace {
 
@@ -26,6 +27,20 @@ namespace {
 
 namespace math {
 
+    unsigned first_digit(const unsigned& num) {
+        return num / std::pow(10, count_digits(num));
+    }
+
+
+    unsigned reverse(const unsigned& num) {
+        if (num < 10)
+            return num;
+        auto count_digits_ = count_digits(num);
+        auto last_digit = num % 10;
+        return reverse((num / 10)) + last_digit * std::pow(10, count_digits_ - 1);
+    }
+
+
     float approx(const double& num, const unsigned& precision) {
         unsigned factor = power(10, precision + 1);
         int factored_num = num * factor;
@@ -37,6 +52,7 @@ namespace math {
             return float(factored_num - last_digit)/factor;
     }
 
+    
 
     double sqrt(const double& num) {
         double min = 1;
@@ -68,7 +84,7 @@ namespace math {
      RECURSION
      */
     unsigned count_digits(const int& num) {
-        return abs(num) < 10? 1 : count_digits(num/10) + 1;
+        return std::floor(std::log10(num)) + 1;
     }
 
 /// Return the max number of regions a plane could be cut into using n lines.
@@ -90,6 +106,9 @@ namespace math {
             std::swap(num1, num2);
         return num1 % num2 == 0 ? num2 : gcd(num2, num1 % num2);
     }
+
+    
+    
 
 
     unsigned summation(const unsigned& num) {

@@ -10,16 +10,21 @@
 
 #include <iostream>
 namespace math {
-
-
+    
+    double log(const unsigned&);
+    double sqrt(const double&);
     float approx(const double&, const unsigned& = 0);
     unsigned count_digits(const int&);
     unsigned count_regions(const unsigned&);
+    unsigned first_digit(const unsigned&);
     unsigned factorial(const unsigned&);
     unsigned gcd(unsigned, unsigned);
+    unsigned reverse(const unsigned& num);
     unsigned summation(const unsigned&);
     unsigned sum_digits(const unsigned&);
-    double sqrt(const double& num);
+    unsigned reverse(const unsigned&);
+    
+
 
 
     template <typename T, typename = typename std::enable_if_t<std::is_arithmetic_v<T>, T>>

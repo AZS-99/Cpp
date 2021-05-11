@@ -53,7 +53,7 @@ Pair<T, V> make_pair(const T& first, const V& second) {
     because that would make it possible to build a pair by passing only one argument.
  
  2- Pairs do allow empty constructors, try std::pair<std::string, int>();
-    They are particularly important with nodes and arrays, like when initiating an array of empty pairs.
+    They are particularly important with nodes, arrays and vectors, like when initiating an array
+    of pairs, or a vector of pairs with an initial size.
  */
-
 #endif /* pair_hpp */
