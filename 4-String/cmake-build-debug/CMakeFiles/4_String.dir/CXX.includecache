@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/4-String/main.cpp
-iostream
--
-string
--
+/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/4-String/str.cpp
 str.h
 /Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/4-String/str.h
 

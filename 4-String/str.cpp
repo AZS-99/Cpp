@@ -11,5 +11,6 @@ std::string truncate(const std::string& str, const unsigned& k) {
         if (std::isspace(*it++))
             ++count_spaces;
     }
-    return str.substr(0, it - str.cbegin());
+    // You need to not include the last space.
+    return it == str.cend()? std::string(str) : str.substr(0, it - str.cbegin() - 1);
 }
