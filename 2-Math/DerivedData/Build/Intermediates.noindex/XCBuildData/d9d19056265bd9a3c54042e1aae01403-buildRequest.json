@@ -1,0 +1,51 @@
+{
+  "buildCommand" : "prepareForIndexing",
+  "configuredTargets" : [
+    {
+      "guid" : "4e95a3aa833c0dbb89aa242b8aca4f848b62a91c01b778ed5e5da9ff491c5a55"
+    }
+  ],
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx11.3",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "x86_64h",
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/2-Math/DerivedData/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/2-Math/DerivedData/Build/Products/Debug",
+      "derivedDataPath" : "/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/2-Math/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/2-Math/DerivedData/Math/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/2-Math/DerivedData/Math/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/2-Math/DerivedData/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

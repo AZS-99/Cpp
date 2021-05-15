@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/4-String/main.cpp
+iostream
+-
+string
+-
+str.h
+/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/4-String/str.h
+
+/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/4-String/str.h
+string
+-
+

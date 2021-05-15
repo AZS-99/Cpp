@@ -1,0 +1,51 @@
+{
+  "buildCommand" : "prepareForIndexing",
+  "configuredTargets" : [
+    {
+      "guid" : "1e6faf1a17c8948f4f45762e9726788ad405f202b8c53090fadbe1dce1a8133d"
+    }
+  ],
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx11.3",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "x86_64h",
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/6-Data_Structures/6-LinkedList/1-layer/singly_list/DerivedData/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/6-Data_Structures/6-LinkedList/1-layer/singly_list/DerivedData/Build/Products/Debug",
+      "derivedDataPath" : "/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/6-Data_Structures/6-LinkedList/1-layer/singly_list/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/6-Data_Structures/6-LinkedList/1-layer/singly_list/DerivedData/Node/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/6-Data_Structures/6-LinkedList/1-layer/singly_list/DerivedData/Node/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/6-Data_Structures/6-LinkedList/1-layer/singly_list/DerivedData/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
