@@ -6,8 +6,9 @@
 #define INC_4_STRING_STR_H
 
 #include <string>
+#include <vector>
 
-std::string truncate(const std::string&, const unsigned&);
+std::string truncate_n_words(const std::string &str, const unsigned &n);
 
 
 #endif //INC_4_STRING_STR_H
