@@ -1,0 +1,3 @@
+/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/4-Sort/Quick_/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/4-Sort/Quick_/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/adam/Library/Mobile Documents/com~apple~CloudDocs/Cpp/4-Sort/Quick_/cmake-build-debug/CMakeFiles/Quick_.dir
